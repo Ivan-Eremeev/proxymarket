@@ -1,0 +1,56 @@
+/* Header
+ ----------------------------------------------------------------------------- */
+.header {
+	padding: 2em 0;
+	background: transparent;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	color: #fff;
+	z-index: 10;
+
+	&__content {
+		@extend .container_center;
+		margin: auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__left {
+		
+	}
+	
+	&__right {
+		display: flex;
+		align-items: center;
+	}
+	&.stiky {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding: 1em 0;
+		background: #1B3149;
+		-webkit-box-shadow: 0 0.6em 0.6em rgb(0 0 0 / 10%);
+		box-shadow: 0 0.6em 0.6em rgb(0 0 0 / 10%);
+		-webkit-animation: showStyky 0.5s;
+		animation: showStyky 0.5s;
+	}
+	@media (min-width: $break_sm) {
+		&__right {
+			display: flex;
+			justify-content: space-between;
+			width: 60%;
+		}
+	}
+}
+
+// stiky menu
+.stiky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}

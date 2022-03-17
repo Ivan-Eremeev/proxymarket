@@ -1,0 +1,9 @@
+.welcome {
+  background-image: url(../img/welcome_bg.jpg);
+  background-size: cover;
+  color: #fff;
+  min-height: 1000px;
+  @media (min-width: $break_sm) {
+    padding: 10em 0em;
+  }
+}
