@@ -590,7 +590,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .header__right {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -660,11 +660,9 @@ body {
   .navbar__toggle {
     display: block;
     position: relative;
-    color: #00aed4;
-    border-top: 0.2em solid;
-    border-bottom: 0.2em solid;
-    left: 1.3em;
-    top: 1.3em;
+    color: #0000FF;
+    border-top: 0.15em solid;
+    border-bottom: 0.15em solid;
     width: 2em;
     height: 1.5em;
     cursor: pointer;
@@ -676,7 +674,7 @@ body {
   .navbar__toggle:after, .navbar__toggle:before {
     content: "";
     position: absolute;
-    border-top: 0.2em solid;
+    border-top: 0.15em solid;
     width: 100%;
     left: 0;
     top: 50%;
@@ -1443,9 +1441,27 @@ html[data-browser*=flexible] .grid_nowrap {
 }
 
 .lang__trigger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+}
+.lang__trigger svg {
+  display: none;
+}
+.lang__list {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+.lang__list li a {
+  color: #fff;
+  text-decoration: none;
 }
 @media (min-width: 768px) {
   .lang__trigger {
@@ -1482,6 +1498,17 @@ html[data-browser*=flexible] .grid_nowrap {
   .lang__trigger:hover:after {
     opacity: 1;
   }
+  .lang__trigger:hover svg {
+    fill: #0084FF;
+  }
+  .lang__trigger svg {
+    display: block;
+    margin-left: 0.5em;
+    fill: #fff;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
   .lang__drop {
     visibility: hidden;
     opacity: 0;
@@ -1493,6 +1520,16 @@ html[data-browser*=flexible] .grid_nowrap {
     transform: translate(0, 50px);
   }
 }
+@media (max-width: 767px) {
+  .lang {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .lang__list {
+    margin-left: 0.5em;
+  }
+}
 
 .welcome {
   background-image: url(../img/welcome_bg.jpg);
@@ -1501,7 +1538,7 @@ html[data-browser*=flexible] .grid_nowrap {
   color: #fff;
   min-height: 1000px;
 }
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .welcome {
     padding: 10em 0em;
   }

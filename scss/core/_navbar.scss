@@ -21,11 +21,9 @@
 		@media (max-width: 767px) {
 			display: block;
 			position: relative;
-			color: #00aed4;
-			border-top: 0.2em solid;
-			border-bottom: 0.2em solid;
-			left: 1.3em;
-			top: 1.3em;
+			color: $color_primary;
+			border-top: 0.15em solid;
+			border-bottom: 0.15em solid;
 			width: 2em;
 			height: 1.5em;
 			cursor: pointer;
@@ -36,7 +34,7 @@
 			&:before {
 				content: '';
 				position: absolute;
-				border-top: 0.2em solid;
+				border-top: 0.15em solid;
 				width: 100%;
 				left: 0;
 				top: 50%;
@@ -62,7 +60,7 @@
 			}
 		}
 	}
-	@media (min-width: $break_sm) {
+	@media (min-width: $break_sm + 1) {
 		&__link {
 			background: transparent;
 			position: relative;

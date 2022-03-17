@@ -1,14 +1,27 @@
 .lang {
   &__trigger {
+    display: flex;
+    align-items: center;
     transition: 0.3s;
+    svg {
+      display: none;
+    }
   }
   &__drop {
     
   }
   &__list {
-
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+    li {
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
   }
-  @media (min-width: $break_sm) {
+  @media (min-width: $break_sm + 1) {
     &__trigger {
       background: transparent;
 			position: relative;
@@ -33,7 +46,16 @@
 				&:after {
 					opacity: 1;
 				}
+        svg {
+          fill: #0084FF;
+        }
 			}
+      svg {
+        display: block;
+        margin-left: 0.5em;
+        fill: #fff;
+        transition: 0.3s;
+      }
     }
     &__drop {
       visibility: hidden;
@@ -42,6 +64,12 @@
       top: 100%;
       left: 0;
       transform: translate(0,50px);
+    }
+  }
+  @media (max-width: $break_sm) {
+    display: flex;
+    &__list {
+      margin-left: 0.5em;
     }
   }
 }
