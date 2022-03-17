@@ -1493,6 +1493,7 @@ html[data-browser*=flexible] .grid_nowrap {
 
 .welcome {
   background-image: url(../img/welcome_bg.jpg);
+  background-color: #18202F;
   background-size: cover;
   color: #fff;
   min-height: 1000px;
