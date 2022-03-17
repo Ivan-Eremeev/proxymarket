@@ -566,6 +566,9 @@ body {
   width: 100%;
   color: #fff;
   z-index: 10;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
 }
 .header__content {
   margin: auto;
