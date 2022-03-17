@@ -1439,6 +1439,11 @@ html[data-browser*=flexible] .grid_nowrap {
   cursor: pointer;
 }
 
+.lang__trigger {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
 @media (min-width: 768px) {
   .lang__trigger {
     background: transparent;
