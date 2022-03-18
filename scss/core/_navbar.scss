@@ -4,11 +4,8 @@
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	display: flex;
 
 	&__item {
-		// display: inline-block;
-		margin: 5px;
 	}
 
 	&__link {
@@ -18,10 +15,53 @@
 
 	&__toggle {
 		display: none;
-		@media (max-width: 767px) {
+	}
+	@media (min-width: $break_sm + 1) {
+		display: flex;
+		margin-left: -2em;
+		&__item {
+			margin-left: 2em;
+			position: relative;
+			&:hover {
+				.navbar__link {
+					background-color: $color_secondary;
+				}
+				.navbar__drop {
+					visibility: visible;
+					opacity: 1;
+					transform: translate(0,0);
+				}
+			}
+		}
+		&__link {
+			display: block;
+			background: transparent;
+			position: relative;
+			font-size: 1em;
+			padding: 0.8em 1.3em 0.8em;
+			border-radius: 0.4em;
+		}
+		&__drop {
+			padding-top: 0.3em;
+			visibility: hidden;
+			opacity: 0;
+			transform: translate(0,10px);
+			position: absolute;
+			left: 0;
+			top: 100%;
+			transition: 0.3s;
+		}
+	}
+	@media (max-width: $break_sm) {
+		flex-grow: 1;
+		overflow-y: auto;
+		&__item {
+			margin: 0.5em 0;
+		}
+		&__toggle {
 			display: block;
 			position: relative;
-			color: $color_primary;
+			color: #fff;
 			border-top: 0.15em solid;
 			border-bottom: 0.15em solid;
 			width: 2em;
@@ -59,31 +99,12 @@
 				// color: rgba($color_withe, .8);
 			}
 		}
-	}
-	@media (min-width: $break_sm + 1) {
-		&__link {
-			background: transparent;
-			position: relative;
-			font-size: 1em;
-			margin-left: 3em;
-			&:after {
-				content: '';
-				display: block;
-				width: 2em;
-				height: 2em;
-				background-color: #0084FF;
-				filter: blur(1.625em);
-				opacity: 0;
-				transition: 0.3s;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%,-50%);
-			}
-			&:hover {
-				color: #0084FF;
-				&:after {
-					opacity: 1;
+		&__drop {
+			.lang__list {
+				font-size: 0.9em;
+				padding: 0.3em 0.5em;
+				li {
+					margin: 0.2em 0;
 				}
 			}
 		}
@@ -92,17 +113,20 @@
 
 @media (max-width: 767px) {
 	.nav {
+		display: flex;
+		flex-direction: column;
 		position: fixed;
-		left: -300px;
+		left: -800px;
 		top: 0;
 		bottom: 0;
 		background-color: $color_withe;
-		width: 300px;
+		width: 100%;
 		z-index: 10;
 		overflow: hidden;
 		padding: 5em 1em 2em;
 		transition: left 0.3s;
 		box-shadow: 0 0 1em rgba(#000, .1);
+		background-color: $color_secondary;
 
 		&.open {
 			left: 0;

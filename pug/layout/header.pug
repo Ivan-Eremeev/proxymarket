@@ -2,14 +2,44 @@ header.header
     .header__content
         .header__left
             a.logo(href="/")
-                img(src="img/logo.png", alt="alt")
+                img(src="img/logo.svg", alt="alt")
         nav.header__right
             .nav
                 ul.navbar
-                    each navLink in [{name: 'Инструменты', href: ''},{name: 'Информация', href: ''},{name: 'Компания', href: ''}]
-                        li.navbar__item
-                            a.navbar__link(href= navLink.href)= navLink.name
-            .lang 
+                    li.navbar__item
+                        a.navbar__link(href="") Инструменты
+                        .navbar__drop 
+                            ul.lang__list 
+                                li 
+                                    a(href="#") Чекер прокси
+                                li 
+                                    a(href="#") Конвертер форматов
+                                li 
+                                    a(href="#") Поддержка IPv6
+                                li 
+                                    a(href="#") Генератор UTM-меток
+                                li 
+                                    a(href="#") Скорость прокси
+                                li 
+                                    a(href="#") Мой IP
+                    li.navbar__item
+                        a.navbar__link(href="") Информация
+                    li.navbar__item
+                        a.navbar__link(href="") Компания
+                .lang.mobile 
+                    .lang__trigger Ru
+                        svg(width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            path(fill-rule="evenodd" clip-rule="evenodd" d="M0.175736 0.575638C0.410051 0.341324 0.78995 0.341324 1.02426 0.575638L4.6 4.15137L8.17574 0.575638C8.41005 0.341324 8.78995 0.341324 9.02426 0.575638C9.25858 0.809953 9.25858 1.18985 9.02426 1.42417L5.02426 5.42417C4.78995 5.65848 4.41005 5.65848 4.17574 5.42417L0.175736 1.42417C-0.0585787 1.18985 -0.0585787 0.809953 0.175736 0.575638Z")
+                    .lang__drop 
+                        ul.lang__list 
+                            li 
+                                a(href="#") En
+                            li 
+                                a(href="#") Fra
+                            li 
+                                a(href="#") De
+                .btn.mobile Войти
+            .lang.desktop
                 .lang__trigger Ru
                     svg(width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg")
                         path(fill-rule="evenodd" clip-rule="evenodd" d="M0.175736 0.575638C0.410051 0.341324 0.78995 0.341324 1.02426 0.575638L4.6 4.15137L8.17574 0.575638C8.41005 0.341324 8.78995 0.341324 9.02426 0.575638C9.25858 0.809953 9.25858 1.18985 9.02426 1.42417L5.02426 5.42417C4.78995 5.65848 4.41005 5.65848 4.17574 5.42417L0.175736 1.42417C-0.0585787 1.18985 -0.0585787 0.809953 0.175736 0.575638Z")
@@ -17,5 +47,9 @@ header.header
                     ul.lang__list 
                         li 
                             a(href="#") En
-            .btn Войти
+                        li 
+                            a(href="#") Fra
+                        li 
+                            a(href="#") De
+            .btn.desktop Войти
             .navbar__toggle

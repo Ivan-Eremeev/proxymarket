@@ -17,6 +17,9 @@
 	border-radius: 0.4em;
 	transition: 0.3s;
 	transition-property: background color border-color;
+	&--big {
+		padding: 1.45em 3.375em;
+	}
 
 	&:hover {
 		background-color: $btn_default_bg_color_hover;

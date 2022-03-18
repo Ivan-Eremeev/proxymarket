@@ -93,82 +93,82 @@
  openMobileNav();
 
  // Scroll to ID // Плавный скролл к элементу при нажатии на ссылку. В ссылке указываем ID элемента
- function srollToId() {
-     const el = document.querySelectorAll('[data-scroll-to]');
-     el.forEach((item, i) => {
-         item.addEventListener('click', e => {
-             console.log(e.target.href);
-             document.body.classList.remove('navbar__open');
-             document.querySelector('.nav').classList.remove('open');
-             document.querySelector('.navbar__toggle').classList.remove('active');
-         });
-     });
- }
- srollToId();
+//  function srollToId() {
+//      const el = document.querySelectorAll('[data-scroll-to]');
+//      el.forEach((item, i) => {
+//          item.addEventListener('click', e => {
+//              console.log(e.target.href);
+//              document.body.classList.remove('navbar__open');
+//              document.querySelector('.nav').classList.remove('open');
+//              document.querySelector('.navbar__toggle').classList.remove('active');
+//          });
+//      });
+//  }
+//  srollToId();
 
  // Проверка направления прокрутки вверх/вниз
- function checkDirectionScroll() {
-     let tempScrollTop, currentScrollTop = 0;
+//  function checkDirectionScroll() {
+//      let tempScrollTop, currentScrollTop = 0;
 
-     window.addEventListener('scroll', () => {
-         currentScrollTop = window.scrollY;
+//      window.addEventListener('scroll', () => {
+//          currentScrollTop = window.scrollY;
 
-         if (tempScrollTop < currentScrollTop ) {
-             app.pageScroll = "down";
-         } else if (tempScrollTop > currentScrollTop ) {
-             app.pageScroll = "up";
-         }
-         tempScrollTop = currentScrollTop;
-     });
- }
- checkDirectionScroll();
+//          if (tempScrollTop < currentScrollTop ) {
+//              app.pageScroll = "down";
+//          } else if (tempScrollTop > currentScrollTop ) {
+//              app.pageScroll = "up";
+//          }
+//          tempScrollTop = currentScrollTop;
+//      });
+//  }
+//  checkDirectionScroll();
 
-function toggleTabs() {
-    let toggle = $('[data-tab]');
-    toggle.on('click', (e) => {
-        let self = e.target;
-        $('[data-tab]').removeClass('active');
-        $(self).addClass('active');
-        $('[data-plate]').removeClass('active');
-        $('[data-plate='+self.dataset.tab+']').addClass('active');
-    });
-}
-toggleTabs();
+// function toggleTabs() {
+//     let toggle = $('[data-tab]');
+//     toggle.on('click', (e) => {
+//         let self = e.target;
+//         $('[data-tab]').removeClass('active');
+//         $(self).addClass('active');
+//         $('[data-plate]').removeClass('active');
+//         $('[data-plate='+self.dataset.tab+']').addClass('active');
+//     });
+// }
+// toggleTabs();
 
 // Видео youtube для страницы
-function uploadYoutubeVideo() {
-    if ($(".js-youtube")) {
+// function uploadYoutubeVideo() {
+//     if ($(".js-youtube")) {
 
-        $(".js-youtube").each(function () {
-            // Зная идентификатор видео на YouTube, легко можно найти его миниатюру
-            $(this).css('background-image', 'url(http://i.ytimg.com/vi/' + this.id + '/sddefault.jpg)');
+//         $(".js-youtube").each(function () {
+//             // Зная идентификатор видео на YouTube, легко можно найти его миниатюру
+//             $(this).css('background-image', 'url(http://i.ytimg.com/vi/' + this.id + '/sddefault.jpg)');
 
-            // Добавляем иконку Play поверх миниатюры, чтобы было похоже на видеоплеер
-            $(this).append($('<img src="img/play.svg" alt="Play" class="video__play">'));
+//             // Добавляем иконку Play поверх миниатюры, чтобы было похоже на видеоплеер
+//             $(this).append($('<img src="img/play.svg" alt="Play" class="video__play">'));
 
-        });
+//         });
 
-        $('.video__play, .video__prev').on('click', function () {
-            // создаем iframe со включенной опцией autoplay
-            let wrapp = $(this).closest('.js-youtube'),
-                videoId = wrapp.attr('id'),
-                iframe_url = "https://www.youtube.com/embed/" + videoId + "?autoplay=1&autohide=1";
+//         $('.video__play, .video__prev').on('click', function () {
+//             // создаем iframe со включенной опцией autoplay
+//             let wrapp = $(this).closest('.js-youtube'),
+//                 videoId = wrapp.attr('id'),
+//                 iframe_url = "https://www.youtube.com/embed/" + videoId + "?autoplay=1&autohide=1";
 
-            if ($(this).data('params')) iframe_url += '&' + $(this).data('params');
+//             if ($(this).data('params')) iframe_url += '&' + $(this).data('params');
 
-            // Высота и ширина iframe должны быть такими же, как и у родительского блока
-            let iframe = $('<iframe/>', {
-                'frameborder': '0',
-                'src': iframe_url,
-                'allow': "autoplay"
-            })
+//             // Высота и ширина iframe должны быть такими же, как и у родительского блока
+//             let iframe = $('<iframe/>', {
+//                 'frameborder': '0',
+//                 'src': iframe_url,
+//                 'allow': "autoplay"
+//             })
 
-            // Заменяем миниатюру HTML5 плеером с YouTube
-            $(this).closest('.video__wrapper').append(iframe);
+//             // Заменяем миниатюру HTML5 плеером с YouTube
+//             $(this).closest('.video__wrapper').append(iframe);
 
-        });
-    }
-};
+//         });
+//     }
+// };
 
 
 // Деление чисел на разряды Например из строки 10000 получаем 10 000
@@ -360,3 +360,41 @@ function uploadYoutubeVideo() {
 //         }
 //     }, duration / final);
 // }
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Выпадайка при клике
+    function drop() {
+        let triggers = document.querySelectorAll('.js-dropTrigger'),
+            closes = document.querySelectorAll('.js-dropClose');
+        for (let i = 0; i < triggers.length; i++) {
+            let trigger = triggers[i];
+            trigger.addEventListener('click', () => {
+                let drop = document.getElementById(trigger.getAttribute('data-drop'));
+                if (!trigger.classList.contains('active')) {
+                    trigger.classList.add('active');
+                    drop.classList.add('open');
+                } else {
+                    trigger.classList.remove('active');
+                    drop.classList.remove('open');
+                }
+                document.addEventListener('click', (e) => {
+                    if (!trigger.contains(e.target)
+                        && !drop.contains(e.target)) {
+                        trigger.classList.remove('active');
+                        drop.classList.remove('open');
+                    }
+                });
+            })
+        }
+        for (let i = 0; i < closes.length; i++) {
+            let close = closes[i];
+            close.addEventListener('click', () => {
+                let drop = document.getElementById(close.getAttribute('data-drop')),
+                    trigger = document.querySelector('[data-drop=' + close.getAttribute('data-drop') + ']');
+                drop.classList.remove('open');
+                trigger.classList.remove('active');
+            })
+        }
+    }
+    drop();
+})

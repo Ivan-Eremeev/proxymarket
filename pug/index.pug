@@ -3,6 +3,80 @@ extends layout/layout.pug
 block content
     // welcome
     .welcome
+        .welcome__img 
+            img(src="img/welcome_bg.jpg", alt="")
         .container_center 
-            
+            .welcome__raiting 
+                .welcome__raiting-row
+                    span Excellent — 4,4
+                    img(src="img/raiting.png", alt="").welcome__raiting__img1
+                    img(src="img/raiting_2.png", alt="").welcome__raiting__img2
+            .welcome__content 
+                .welcome__title Качественные прокси IPv4 и IPv6
+                .welcome__text для социальных сетей, парсинга и любых других задач с выделением индивидуальной подсети
+            .welcome__calc 
+                .welcome__calc-head
+                    .welcome__calc-title Онлайн-калькулятор 
+                    .welcome__calc-text 
+                        span !
+                        | Возьмите еще 4 прокси — получите скидку 1 руб.
+                .welcome__calc-body 
+                    .welcome__calc-row 
+                        .welcome__calc-col 
+                            .select 
+                                .select__label Тип прокси
+                                .select__select
+                                    select(name="#") 
+                                        option(value="#") IPv6 (Россия)
+                                        option(value="#") IPv6 (Россия)
+                                        option(value="#") IPv6 (Россия)
+                        .welcome__calc-col 
+                            .select 
+                                .select__label Скорость
+                                .select__select
+                                    select(name="#") 
+                                        option(value="#") до 1 Мбит/с
+                                        option(value="#") до 1 Мбит/с
+                                        option(value="#") до 1 Мбит/с
+                        .welcome__calc-col 
+                            .select 
+                                .select__label Срок аренды
+                                .select__select
+                                    select(name="#") 
+                                        option(value="#") 7 дней
+                                        option(value="#") 7 дней
+                                        option(value="#") 7 дней
+                        .welcome__calc-col 
+                            .input 
+                                .input__label Количество прокси
+                                .input__input 
+                                    input(type="text" value="1")
+                                    .input__text 5,9 руб/шт
+                        .welcome__calc-col 
+                            .input 
+                                .input__label Промокод
+                                .input__input 
+                                    input(type="text")
+                        .welcome__calc-col.welcome__calc-col--btn
+                            .btn.btn--big Купить за 5,9 руб.
+            .welcome__social 
+                .welcome__social-title Наши прокси подходят для работы с самыми популярными ресурсами
+                .welcome__social-row
+                    .welcome__social-item
+                        img(src="img/insata.svg", alt="")
+                    .welcome__social-item
+                        img(src="img/vk.svg", alt="")
+                    .welcome__social-item
+                        img(src="img/fb.svg", alt="")
+                    .welcome__social-item
+                        img(src="img/yula.svg", alt="")
+                    .welcome__social-item
+                        img(src="img/ya.svg", alt="")
+                    .welcome__social-item
+                        img(src="img/key.svg", alt="")
+                    .welcome__social-item
+                        img(src="img/tooligram.svg", alt="")
+                .welcome__social-text 
+                    span !
+                    | Узнайте, какой прокси подойдет для вашего ресурса
     //	/welcome

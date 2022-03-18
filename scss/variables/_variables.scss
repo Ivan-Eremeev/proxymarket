@@ -14,6 +14,7 @@ $break_sm: 767px;
 
 // Color collection for elements
 $color_primary: #0000FF;
+$color_secondary: #20304B;
 $color_success: #36a566;
 $color_info: #03a9f4;
 $color_warning: #fca33e;
@@ -37,19 +38,19 @@ $grid_padding: 20px;
 // Input variables
 
 // Input color
-$input_color: $main_color;
-$input_bg_color: #fff;
-$input_border_color: #ddd;
-$input_placeholder_color: #ddd;
+$input_color: #fff;
+$input_bg_color: #0C1E34;
+$input_border_color: rgba(147, 160, 180, 0.3);
+$input_placeholder_color: #fff;
 
 // Input hover color
-$input_hover_color: $main_color;
+$input_hover_color: $input_color;
 $input_hover_bg_color: $input_bg_color;
 $input_hover_border_color: $input_border_color;
 $input_hover_placeholder_color: $input_placeholder_color;
 
 // Input focus color
-$input_focus_color: $main_color;
+$input_focus_color: $input_color;
 $input_focus_bg_color: $input_bg_color;
 $input_focus_border_color: $input_border_color;
 $input_focus_placeholder_color: $input_placeholder_color;

@@ -10,16 +10,42 @@
 	<body>
 		<header class="header">
 			<div class="header__content">
-				<div class="header__left"><a class="logo" href="/"><img src="img/logo.png" alt="alt"/></a></div>
+				<div class="header__left"><a class="logo" href="/"><img src="img/logo.svg" alt="alt"/></a></div>
 				<nav class="header__right">
 					<div class="nav">
 						<ul class="navbar">
-							<li class="navbar__item"><a class="navbar__link" href="">Инструменты</a></li>
+							<li class="navbar__item"><a class="navbar__link" href="">Инструменты</a>
+								<div class="navbar__drop"> 
+									<ul class="lang__list"> 
+										<li> <a href="#">Чекер прокси</a></li>
+										<li> <a href="#">Конвертер форматов</a></li>
+										<li> <a href="#">Поддержка IPv6</a></li>
+										<li> <a href="#">Генератор UTM-меток</a></li>
+										<li> <a href="#">Скорость прокси</a></li>
+										<li> <a href="#">Мой IP</a></li>
+									</ul>
+								</div>
+							</li>
 							<li class="navbar__item"><a class="navbar__link" href="">Информация</a></li>
 							<li class="navbar__item"><a class="navbar__link" href="">Компания</a></li>
 						</ul>
+						<div class="lang mobile"> 
+							<div class="lang__trigger">Ru
+								<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M0.175736 0.575638C0.410051 0.341324 0.78995 0.341324 1.02426 0.575638L4.6 4.15137L8.17574 0.575638C8.41005 0.341324 8.78995 0.341324 9.02426 0.575638C9.25858 0.809953 9.25858 1.18985 9.02426 1.42417L5.02426 5.42417C4.78995 5.65848 4.41005 5.65848 4.17574 5.42417L0.175736 1.42417C-0.0585787 1.18985 -0.0585787 0.809953 0.175736 0.575638Z"></path>
+								</svg>
+							</div>
+							<div class="lang__drop"> 
+								<ul class="lang__list"> 
+									<li> <a href="#">En</a></li>
+									<li> <a href="#">Fra</a></li>
+									<li> <a href="#">De</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="btn mobile">Войти</div>
 					</div>
-					<div class="lang"> 
+					<div class="lang desktop">
 						<div class="lang__trigger">Ru
 							<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M0.175736 0.575638C0.410051 0.341324 0.78995 0.341324 1.02426 0.575638L4.6 4.15137L8.17574 0.575638C8.41005 0.341324 8.78995 0.341324 9.02426 0.575638C9.25858 0.809953 9.25858 1.18985 9.02426 1.42417L5.02426 5.42417C4.78995 5.65848 4.41005 5.65848 4.17574 5.42417L0.175736 1.42417C-0.0585787 1.18985 -0.0585787 0.809953 0.175736 0.575638Z"></path>
@@ -28,10 +54,12 @@
 						<div class="lang__drop"> 
 							<ul class="lang__list"> 
 								<li> <a href="#">En</a></li>
+								<li> <a href="#">Fra</a></li>
+								<li> <a href="#">De</a></li>
 							</ul>
 						</div>
 					</div>
-					<div class="btn">Войти</div>
+					<div class="btn desktop">Войти</div>
 					<div class="navbar__toggle"></div>
 				</nav>
 			</div>
@@ -39,14 +67,101 @@
 		<main class="main_content">
 			<!-- welcome-->
 			<div class="welcome">
-				<div class="container_center"> </div>
+				<div class="welcome__img"> <img src="img/welcome_bg.jpg" alt=""/></div>
+				<div class="container_center"> 
+					<div class="welcome__raiting"> 
+						<div class="welcome__raiting-row"><span>Excellent — 4,4</span><img class="welcome__raiting__img1" src="img/raiting.png" alt=""/><img class="welcome__raiting__img2" src="img/raiting_2.png" alt=""/></div>
+					</div>
+					<div class="welcome__content"> 
+						<div class="welcome__title">Качественные прокси IPv4 и IPv6</div>
+						<div class="welcome__text">для социальных сетей, парсинга и любых других задач с выделением индивидуальной подсети</div>
+					</div>
+					<div class="welcome__calc"> 
+						<div class="welcome__calc-head">
+							<div class="welcome__calc-title">Онлайн-калькулятор </div>
+							<div class="welcome__calc-text"> <span>!</span>Возьмите еще 4 прокси — получите скидку 1 руб.</div>
+						</div>
+						<div class="welcome__calc-body"> 
+							<div class="welcome__calc-row"> 
+								<div class="welcome__calc-col"> 
+									<div class="select"> 
+										<div class="select__label">Тип прокси</div>
+										<div class="select__select">
+											<select name="#"> 
+												<option value="#">IPv6 (Россия)</option>
+												<option value="#">IPv6 (Россия)</option>
+												<option value="#">IPv6 (Россия)</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="welcome__calc-col"> 
+									<div class="select"> 
+										<div class="select__label">Скорость</div>
+										<div class="select__select">
+											<select name="#"> 
+												<option value="#">до 1 Мбит/с</option>
+												<option value="#">до 1 Мбит/с</option>
+												<option value="#">до 1 Мбит/с</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="welcome__calc-col"> 
+									<div class="select"> 
+										<div class="select__label">Срок аренды</div>
+										<div class="select__select">
+											<select name="#"> 
+												<option value="#">7 дней</option>
+												<option value="#">7 дней</option>
+												<option value="#">7 дней</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="welcome__calc-col"> 
+									<div class="input"> 
+										<div class="input__label">Количество прокси</div>
+										<div class="input__input"> 
+											<input type="text" value="1"/>
+											<div class="input__text">5,9 руб/шт</div>
+										</div>
+									</div>
+								</div>
+								<div class="welcome__calc-col"> 
+									<div class="input"> 
+										<div class="input__label">Промокод</div>
+										<div class="input__input"> 
+											<input type="text"/>
+										</div>
+									</div>
+								</div>
+								<div class="welcome__calc-col welcome__calc-col--btn">
+									<div class="btn btn--big">Купить за 5,9 руб.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="welcome__social"> 
+						<div class="welcome__social-title">Наши прокси подходят для работы с самыми популярными ресурсами</div>
+						<div class="welcome__social-row">
+							<div class="welcome__social-item"><img src="img/insata.svg" alt=""/></div>
+							<div class="welcome__social-item"><img src="img/vk.svg" alt=""/></div>
+							<div class="welcome__social-item"><img src="img/fb.svg" alt=""/></div>
+							<div class="welcome__social-item"><img src="img/yula.svg" alt=""/></div>
+							<div class="welcome__social-item"><img src="img/ya.svg" alt=""/></div>
+							<div class="welcome__social-item"><img src="img/key.svg" alt=""/></div>
+							<div class="welcome__social-item"><img src="img/tooligram.svg" alt=""/></div>
+						</div>
+						<div class="welcome__social-text"> <span>!</span>Узнайте, какой прокси подойдет для вашего ресурса</div>
+					</div>
+				</div>
 			</div>
 			<!--	/welcome-->
 		</main>
 		<footer class="footer">
 			<div class="footer__content"></div>
 		</footer>
-		<script src="js/jquery.js"></script>
 		<script src="js/function.js?0.1"></script>
 	</body>
 </html>

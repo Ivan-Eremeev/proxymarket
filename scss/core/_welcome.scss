@@ -1,10 +1,216 @@
 .welcome {
-  background-image: url(../img/welcome_bg.jpg);
   background-color: #18202F;
-  background-size: cover;
   color: #fff;
   min-height: 1000px;
-  @media (min-width: $break_sm) {
-    padding: 10em 0em;
+  padding: 10em 0 6.2em;
+  &__img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .container_center {
+    position: relative;
+    z-index: 2;
+  }
+  &__raiting {
+    font-size: 0.4em;
+    display: inline-block;
+    padding: 1.2em 2em;
+    border-radius: 0.6em;
+    background-color: $color_secondary;
+    margin-bottom: 3.5em;
+  }
+  &__raiting-row {
+    display: flex;
+    align-items: center;
+    margin-left: -1.5em;
+    > * {
+      margin-left: 1.5em;
+    }
+  }
+  &__raiting__img1 {
+    width: 9.6em;
+  }
+  &__raiting__img2 {
+    width: 6.4em;
+  }
+  &__content {
+    font-size: 0.6em;
+    width: 38em;
+    width: 38.75em;
+    margin-bottom: 4.375em;
+  }
+  &__title {
+    line-height: 1.1;
+    font-size: 4.1em;
+    font-weight: bold;
+    margin-bottom: 0.3em;
+  }
+  &__text {
+    line-height: 1.5;
+    font-size: 1.5em;
+  }
+  &__calc {
+    background: rgba(23, 39, 60, 0.9);
+    backdrop-filter: blur(1.5em);
+    border-radius: 1.5625em;
+    margin-bottom: 2.5em;
+  }
+  &__calc-head {
+    font-size: 0.6em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.7375em 1.875em 1.6875em;
+    border-bottom: 0.1em solid #2E3D50;
+  }
+  &__calc-title {
+    font-size: 1.25em;
+    font-weight: bold;
+  }
+  &__calc-text {
+    display: flex;
+    align-items: center;
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 2.1em;
+      height: 2.1em;
+      background-color: $color_primary;
+      border-radius: 100%;
+      font-size: 0.75em;
+      margin-right: 1em;
+    }
+  }
+  &__calc-body {
+    padding: 1.875em;
+  }
+  &__calc-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-left: -1.75em;
+    margin-top: -1em;
+  }
+  &__calc-col {
+    width: 100%;
+    margin-left: 1.75em;
+    margin-top: 1em;
+    &--btn {
+      margin-top: 3em;
+    }
+    .btn {
+      width: 100%;
+      height: 100%;
+      white-space: nowrap;
+    }
+  }
+  &__social {
+    width: 100%;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__social-title {
+    width: 16.5em;
+    margin-right: 2em;
+    margin-bottom: 1em;
+  }
+  &__social-row {
+    font-size: 0.8em;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1.25em;
+    margin-top: -1.25em;
+  }
+  &__social-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5em;
+    padding: 0.6em 0.75em;
+    margin-left: 1.25em;
+    margin-top: 1.25em;
+    background-color: #293342;
+    border-radius: 0.375em;
+    img {
+      display: block;
+      max-height: 100%;
+    }
+  }
+  &__social-text {
+    display: flex;
+    align-items: center;
+    width: 16.875em;
+    margin-top: 1em;
+    font-size: 0.875em;
+    opacity: 0.8;
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 3em;
+      height: 3em;
+      margin-right: 1em;
+      background-color: rgba(0,0,255,.2);
+      border-radius: 100%;
+      position: relative;
+      line-height: 1;
+      &:before {
+        content: '';
+        display: block;
+        width: 2.1em;
+        height: 2.1em;
+        background-color: $color_primary;
+        border-radius: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: -1;
+      }
+    }
+  }
+  @media (min-width: $break_sm + 1) {
+    &__calc-head {
+      font-size: 1em;
+    }
+    &__raiting {
+      font-size: 0.7em;
+    }
+    &__content {
+      font-size: 1em;
+    }
+    &__calc-col {
+      flex: 1;
+      &--btn {
+        margin-top: 1.25em;
+      }
+    }
+    &__social {
+      width: auto;
+      font-size: 1em;
+    }
+    &__social-row {
+      font-size: 1em;
+    }
+    &__social-title {
+      margin-bottom: 0;
+    }
+    &__social-text {
+      margin-left: 2em;
+      margin-top: 0;
+    }
   }
 }

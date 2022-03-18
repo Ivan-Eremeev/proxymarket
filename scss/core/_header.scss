@@ -48,6 +48,20 @@
 	animation: showStyky 0.5s;
 }
 
+.navbar__open {
+  overflow: hidden;
+}
+
+.logo {
+	display: block;
+	position: relative;
+	z-index: 51;
+	img {
+		display: block;
+		width: 14em;
+	}
+}
+
 @keyframes showStyky{
 	0% { 
 		transform:translateY(-100%);
