@@ -8,7 +8,7 @@ body {
 	min-height: 100%;
 	// color: $color_withe;
 
-	// background-color: #101010;
+	background-color: #F9F9FC;
 
 	@media (min-width: 768px) {
 		// font-size: calc(.012 * 100vw + 0px);
@@ -56,6 +56,10 @@ body {
 }
 
 .title {
-	font-size: 3.375em;
+	font-size: 2.5em;
+	line-height: 1.1;
 	font-weight: bold;
+	@media (min-width: $break_sm + 1) {
+		font-size: 3.375em;
+	}
 }

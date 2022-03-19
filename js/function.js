@@ -362,6 +362,7 @@
 // }
 
 document.addEventListener('DOMContentLoaded', () => {
+
     // Выпадайка при клике
     function drop() {
         let triggers = document.querySelectorAll('.js-dropTrigger'),
@@ -397,4 +398,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     drop();
+
+    // Swiper slider
+    const sliderAdvantages = new Swiper('#sliderAdvantages', {
+        navigation: {
+            prevEl: '.advantages__arrow--prev',
+            nextEl: '.advantages__arrow--next',
+        },
+    });
+
 })
