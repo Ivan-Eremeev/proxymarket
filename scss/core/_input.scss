@@ -5,7 +5,7 @@
     input {
       font-size: 1em;
       width: 100%;
-      height: 2.625em;
+      height: 4em;
       padding: 0 1.5625em 0 0.9375em;
       border-width: 0.1em;
       border-style: solid;
@@ -33,5 +33,12 @@
     right: 0.9375em;
     transform: translate(0,-50%);
     z-index: 2;
+  }
+  @media (min-width: $break_sm + 1) {
+    &__input {
+      input {
+        height: 2.625em;
+      }
+    }
   }
 }
