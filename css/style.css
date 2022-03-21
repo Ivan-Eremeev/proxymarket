@@ -663,6 +663,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  font-size: 1em;
 }
 .navbar__link {
   color: #fff;
@@ -721,6 +722,7 @@ body {
     -ms-flex-positive: 1;
     flex-grow: 1;
     overflow-y: auto;
+    font-size: 1.5em;
   }
   .navbar__item {
     margin: 0.5em 0;
