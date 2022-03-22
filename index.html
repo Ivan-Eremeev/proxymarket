@@ -269,7 +269,7 @@
 								</div>
 								<div class="price__footer">
 									<div class="price__subtext">Итого: <span>5,9 руб</span></div>
-									<div class="btn btn--big">Купить         </div>
+									<div class="btn btn--big js-modal-btn" data-modal="priceModal">Купить         </div>
 								</div>
 							</div>
 						</div>
@@ -348,7 +348,7 @@
 								</div>
 								<div class="price__footer">
 									<div class="price__subtext">Итого: <span>65 руб</span></div>
-									<div class="btn btn--big">Купить  </div>
+									<div class="btn btn--big js-modal-btn" data-modal="priceModal">Купить  </div>
 								</div>
 							</div>
 						</div>
@@ -427,7 +427,7 @@
 								</div>
 								<div class="price__footer">
 									<div class="price__subtext">Итого: <span>290 руб</span></div>
-									<div class="btn btn--big">Купить  </div>
+									<div class="btn btn--big js-modal-btn" data-modal="priceModal">Купить  </div>
 								</div>
 							</div>
 						</div>
@@ -632,6 +632,72 @@
 				</div>
 			</div>
 			<!--	/useful-->
+			<!-- modal-->
+			<div class="modal" data-modal="priceModal">
+				<div class="modal__container">
+					<form class="modal__block" action="#">
+						<div class="modal__title">Покупка прокси</div>
+						<div class="modal__subtitle">Информация по покупке</div>
+						<ul class="modal__list"> 
+							<li> <span class="modal__gray-text">Тариф:</span><a href="#">IPv6 Personal</a></li>
+							<li> <span class="modal__gray-text">Количество прокси:</span><span>1</span></li>
+							<li> <span class="modal__gray-text">Срок аренды:</span><span>1 месяц</span></li>
+							<li> <span class="modal__gray-text">Скорость:</span><span>до 1 Мбит/с</span></li>
+							<li> <span class="modal__gray-text">Страна прокси:</span><span>Россия</span></li>
+							<li class="modal__list-line">                    </li>
+							<li class="modal__results"> <span>ИТОГО: </span><span>5,9 руб </span></li>
+						</ul>
+						<div class="modal__subtitle">Способы оплаты</div>
+						<div class="modal__pays"> 
+							<div class="modal__pays-row"> 
+								<div class="modal__pays-col"> 
+									<div class="modal__pays-item"> 
+										<input class="modal__pays-radio" id="pays_0" type="radio" name="pays" checked="checked"/>
+										<label class="modal__pays-label" for="pays_0"> <span class="modal__circle"> </span><span class="modal__icon"> <img src="img/credit-cards.svg" alt=""/></span><span class="modal__text">Банковской картой</span></label>
+									</div>
+								</div>
+								<div class="modal__pays-col"> 
+									<div class="modal__pays-item"> 
+										<input class="modal__pays-radio" id="pays_1" type="radio" name="pays"/>
+										<label class="modal__pays-label" for="pays_1"> <span class="modal__circle"> </span><span class="modal__icon"> <img src="img/qiwi.svg" alt=""/></span><span class="modal__text">Qiwi-кошелек</span></label>
+									</div>
+								</div>
+								<div class="modal__pays-col"> 
+									<div class="modal__pays-item"> 
+										<input class="modal__pays-radio" id="pays_2" type="radio" name="pays"/>
+										<label class="modal__pays-label" for="pays_2"> <span class="modal__circle"> </span><span class="modal__icon"> <img src="img/paypal.svg" alt=""/></span><span class="modal__text">PayPal</span></label>
+									</div>
+								</div>
+								<div class="modal__pays-col"> 
+									<div class="modal__pays-item"> 
+										<input class="modal__pays-radio" id="pays_3" type="radio" name="pays"/>
+										<label class="modal__pays-label" for="pays_3"> <span class="modal__circle"> </span><span class="modal__icon"> <img src="img/bitcoin.svg" alt=""/></span><span class="modal__text">Bitcoin</span></label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal__inputs"> 
+							<div class="input"> 
+								<div class="input__label">Электронная почта</div>
+								<div class="input__input"> 
+									<input type="text" placeholder="Введите вашу электронную почту"/>
+								</div>
+							</div>
+						</div>
+						<div class="modal__bottom"> 
+							<button class="btn btn--big" type="submit">Оплатить</button>
+							<div class="modal__policy"> 
+								<input class="modal__checkbox-input" id="policyModal" type="checkbox" checked="checked"/>
+								<label class="modal__checkbox-label" for="policyModal"><span class="modal__checkbox"> </span>
+									<div class="modal__checkbox-text">Я прочитал <a href="#">пользовательское соглашение</a> и принимаю <a href="#">условия использования,</a> а так же <a href="#">политику конфендициальности</a></div>
+								</label>
+							</div>
+						</div>
+						<div class="modal__close js-modal-close"></div>
+					</form>
+				</div>
+			</div>
+			<!--	/modal-->
 		</main>
 		<footer class="footer">
 			<div class="footer__img"> <img src="img/footer_bg.jpg" alt=""/></div>

@@ -167,7 +167,7 @@ block content
                         .price__footer
                             .price__subtext Итого: 
                                 span 5,9 руб
-                            .btn.btn--big Купить         
+                            .btn.btn--big.js-modal-btn(data-modal="priceModal") Купить         
 
                 .price__col
                     .price__item 
@@ -224,7 +224,7 @@ block content
                         .price__footer
                             .price__subtext Итого: 
                                 span 65 руб
-                            .btn.btn--big Купить  
+                            .btn.btn--big.js-modal-btn(data-modal="priceModal") Купить  
 
                 .price__col
                     .price__item 
@@ -281,7 +281,7 @@ block content
                         .price__footer
                             .price__subtext Итого: 
                                 span 290 руб
-                            .btn.btn--big Купить  
+                            .btn.btn--big.js-modal-btn(data-modal="priceModal") Купить  
     //	/price
 
     // advantages
@@ -456,3 +456,84 @@ block content
                     .useful__text Ознакомьтесь с отзывами или поделитесь своим мнением о нас.
                     .useful__link Подробнее
     //	/useful
+
+    // modal
+    .modal(data-modal="priceModal")
+        .modal__container
+            form(action="#").modal__block
+                .modal__title Покупка прокси
+                .modal__subtitle Информация по покупке
+                ul.modal__list 
+                    li 
+                        span.modal__gray-text Тариф:
+                        a(href="#") IPv6 Personal
+                    li 
+                        span.modal__gray-text Количество прокси:
+                        span 1
+                    li 
+                        span.modal__gray-text Срок аренды:
+                        span 1 месяц
+                    li 
+                        span.modal__gray-text Скорость:
+                        span до 1 Мбит/с
+                    li 
+                        span.modal__gray-text Страна прокси:
+                        span Россия
+                    li.modal__list-line                     
+                    li.modal__results 
+                        span ИТОГО: 
+                        span 5,9 руб 
+                .modal__subtitle Способы оплаты
+                .modal__pays 
+                    .modal__pays-row 
+                        .modal__pays-col 
+                            .modal__pays-item 
+                                input#pays_0(type="radio" name="pays" checked).modal__pays-radio
+                                label(for="pays_0").modal__pays-label 
+                                    span.modal__circle 
+                                    span.modal__icon 
+                                        img(src="img/credit-cards.svg", alt="")
+                                    span.modal__text Банковской картой
+                        .modal__pays-col 
+                            .modal__pays-item 
+                                input#pays_1(type="radio" name="pays").modal__pays-radio
+                                label(for="pays_1").modal__pays-label 
+                                    span.modal__circle 
+                                    span.modal__icon 
+                                        img(src="img/qiwi.svg", alt="")
+                                    span.modal__text Qiwi-кошелек
+                        .modal__pays-col 
+                            .modal__pays-item 
+                                input#pays_2(type="radio" name="pays").modal__pays-radio
+                                label(for="pays_2").modal__pays-label 
+                                    span.modal__circle 
+                                    span.modal__icon 
+                                        img(src="img/paypal.svg", alt="")
+                                    span.modal__text PayPal
+                        .modal__pays-col 
+                            .modal__pays-item 
+                                input#pays_3(type="radio" name="pays").modal__pays-radio
+                                label(for="pays_3").modal__pays-label 
+                                    span.modal__circle 
+                                    span.modal__icon 
+                                        img(src="img/bitcoin.svg", alt="")
+                                    span.modal__text Bitcoin
+                .modal__inputs 
+                    .input 
+                        .input__label Электронная почта
+                        .input__input 
+                            input(type="text" placeholder="Введите вашу электронную почту")
+                .modal__bottom 
+                    button(type="submit").btn.btn--big Оплатить
+                    .modal__policy 
+                        input#policyModal(type="checkbox" checked).modal__checkbox-input
+                        label(for="policyModal").modal__checkbox-label
+                            span.modal__checkbox 
+                            .modal__checkbox-text Я прочитал 
+                                a(href="#") пользовательское соглашение
+                                |  и принимаю 
+                                a(href="#") условия использования,
+                                |  а так же 
+                                a(href="#") политику конфендициальности
+                .modal__close.js-modal-close
+    //	/modal

@@ -407,4 +407,44 @@ document.addEventListener('DOMContentLoaded', () => {
         },
     });
 
+    // Modal
+    function modal() {
+        let btn = document.querySelectorAll('.js-modal-btn'),
+            close = document.querySelectorAll('.js-modal-close'),
+            body = document.querySelector('body'),
+            modals = document.querySelectorAll('.modal');
+        btn.forEach(function (item) {
+            item.addEventListener('click', function (e) {
+                e.preventDefault();
+                let modalId = this.getAttribute('data-modal'),
+                    modal = document.querySelector('.modal[data-modal="' + modalId + '"]');
+                modalOpen(modal);
+            })
+        })
+        close.forEach(function (item) {
+            item.addEventListener('click', function (e) {
+                e.preventDefault();
+                let modal = this.closest('.modal');
+                modalClose(modal);
+            })
+        })
+        modals.forEach(function (item) {
+            item.addEventListener('click', function (e) {
+                let block = this.querySelector('.modal__block');
+                if (!block.contains(e.target)) {
+                    modalClose(this);
+                }
+            })
+        })
+        function modalOpen(modalEl) {
+            modalEl.classList.add('open');
+            body.classList.add('navbar__open');
+        }
+        function modalClose(modalEl) {
+            modalEl.classList.remove('open');
+            body.classList.remove('navbar__open');
+        }
+    }
+    modal();
+
 })

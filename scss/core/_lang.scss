@@ -79,6 +79,7 @@
   @media (max-width: $break_sm) {
     display: flex;
     margin: 1.5em 0;
+    font-size: 1.3em;
     &__drop {
       .lang__list {
         display: flex;
