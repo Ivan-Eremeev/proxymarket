@@ -1,0 +1,19 @@
+.social-icons {
+  &__row {
+    margin-left: -12px;
+  }
+  &__link {
+    margin-left: 12px;
+    display: inline-block;
+    text-decoration: none;
+    svg {
+      fill: #8293A9;
+      transition: 0.3s;
+    }
+    &:hover {
+      svg {
+        fill: #fff;
+      }
+    }
+  }
+}
