@@ -73,9 +73,9 @@
 
      function setNavbarPosition() {
 
-         if ( window.scrollY > header.clientTop ) {
+         if ( window.scrollY > header.clientTop + 150) {
              header.classList.add('stiky');
-         } else {
+         } else if (window.scrollY < header.clientTop + 1) {
              header.classList.remove('stiky');
          }
 

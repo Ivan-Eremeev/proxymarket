@@ -577,9 +577,9 @@ body {
   width: 100%;
   color: #fff;
   z-index: 20;
-  -webkit-transition: 0.1s;
-  -o-transition: 0.1s;
-  transition: 0.1s;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
 .header__bg {
   position: absolute;
