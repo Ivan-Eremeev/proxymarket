@@ -1,12 +1,15 @@
 .social-icons {
   &__row {
-    margin-left: -12px;
+    margin-left: -0.4em;
   }
   &__link {
-    margin-left: 12px;
+    display: block;
+    width: 1.6875em;
+    margin-left: 0.4em;
     display: inline-block;
     text-decoration: none;
     svg {
+      max-width: 100%;
       fill: #8293A9;
       transition: 0.3s;
     }
@@ -14,6 +17,14 @@
       svg {
         fill: #fff;
       }
+    }
+  }
+  @media (min-width: $break_sm + 1) {
+    &__row {
+      margin-left: -0.75em;
+    }
+    &__link {
+      margin-left: 0.75em;
     }
   }
 }

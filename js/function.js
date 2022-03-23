@@ -401,11 +401,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Swiper slider
     const sliderAdvantages = new Swiper('#sliderAdvantages', {
+        autoHeight: true,
         navigation: {
             prevEl: '.advantages__arrow--prev',
             nextEl: '.advantages__arrow--next',
         },
-    });
+    });   
 
     // Modal
     function modal() {
@@ -449,30 +450,71 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Accordion
     function accordion() {
-        let accordion = document.querySelector('.accordion'),
-            triggerAll = accordion.querySelectorAll('.accordion__trigger'),
-            bodyAll = accordion.querySelectorAll('.accordion__body');
-            triggerAll.forEach(function (triggerItem) {
-            triggerItem.addEventListener('click', function (e) {
-                e.preventDefault();
-                let bodyData = this.getAttribute('data-trigger'),
-                    body = accordion.querySelector('.accordion__body[data-body="' + bodyData + '"]');
-                if (!this.classList.contains('active')) {
-                    triggerAll.forEach(function (triggerItem) {
-                        triggerItem.classList.remove('active');
+        document.querySelectorAll('.accordion').forEach(function (accordion) {
+            let triggerAll = accordion.querySelectorAll('.accordion__trigger'),
+                bodyAll = accordion.querySelectorAll('.accordion__body');
+                triggerAll.forEach(function (triggerItem) {
+                    triggerItem.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        let bodyData = this.getAttribute('data-trigger'),
+                            body = accordion.querySelector('.accordion__body[data-body="' + bodyData + '"]');
+                        if (!this.classList.contains('active')) {
+                            triggerAll.forEach(function (triggerItem) {
+                                triggerItem.classList.remove('active');
+                            })
+                            bodyAll.forEach(function (bodyItem) {
+                                bodyItem.style.maxHeight = 0;
+                            })
+                            this.classList.add('active');
+                            body.style.maxHeight = body.scrollHeight + 'px';
+                        } else {
+                            this.classList.remove('active');
+                            body.style.maxHeight = 0;
+                        }
                     })
-                    bodyAll.forEach(function (bodyItem) {
-                        bodyItem.style.maxHeight = 0;
-                    })
-                    this.classList.add('active');
-                    body.style.maxHeight = body.scrollHeight + 'px';
-                }else {
-                    this.classList.remove('active');
-                    body.style.maxHeight = 0;
-                }
-            })
+                })
         })
     }
     accordion();
+
+    // Ограничение кол-ва символов текста
+    function textClip(block, count, heightFixed, btnTextAfter = 'Свернуть') {
+        let elementClip = document.querySelectorAll(block);
+        elementClip.forEach(element => {
+            let inner = element.querySelector('.advantages__inner'),
+                textBlock = element.querySelector('.js-text-clip__block'),
+                btn = element.querySelector('.js-text-clip__more'),
+                thisText = textBlock.innerText,
+                btnTextBefore = btn.innerText;
+            textBlock.innerText = textBlock.innerText.slice(0, count) + '...';
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
+                if (!this.classList.contains('active')) {
+                    if (heightFixed) {
+                        element.setAttribute('style', 'height:' + (element.clientHeight/16) + 'em;');
+                        element.style.zIndex = 5;
+                        inner.style.position = 'absolute';
+                    }
+                    textBlock.innerText = thisText;
+                    btn.innerText = btnTextAfter;
+                    this.classList.add('active');
+                }else {
+                    if (heightFixed) {
+                        element.setAttribute('style', 'height: auto;');
+                        element.style.zIndex = 1;
+                        inner.style.position = 'static';
+                    }
+                    textBlock.innerText = textBlock.innerText.slice(0, count) + '...';
+                    btn.innerText = btnTextBefore;
+                    this.classList.remove('active');
+                }
+                if (document.querySelector('#sliderAdvantages')) {
+                    sliderAdvantages.updateAutoHeight(300);
+                }
+            })
+        });
+    }
+    textClip('.js-text-clip', 620, false, 'Свернуть');
+    textClip('.js-text-clip-fixed', 620, true, 'Свернуть');
 
 })

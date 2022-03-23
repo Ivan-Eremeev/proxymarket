@@ -1,0 +1,544 @@
+extends layout/layout.pug
+
+block content
+    // welcome
+    .welcome
+        .welcome__img 
+            img(src="img/welcome_bg.jpg", alt="")
+        .container_center 
+            .welcome__raiting 
+                .welcome__raiting-row
+                    span Excellent — 4,4
+                    img(src="img/raiting.png", alt="").welcome__raiting__img1
+                    img(src="img/raiting_2.png", alt="").welcome__raiting__img2
+            .welcome__content 
+                .welcome__title Качественные прокси IPv4 и IPv6
+                .welcome__text для социальных сетей, парсинга и любых других задач с выделением индивидуальной подсети
+            .welcome__calc 
+                .welcome__calc-head
+                    .welcome__calc-title Онлайн-калькулятор 
+                    .welcome__calc-text 
+                        span !
+                        | Возьмите еще 4 прокси — получите скидку 1 руб.
+                .welcome__calc-body 
+                    .welcome__calc-row 
+                        .welcome__calc-col 
+                            .select 
+                                .select__label Тип прокси
+                                .select__select
+                                    select(name="#") 
+                                        option(value="#") IPv6 (Россия)
+                                        option(value="#") IPv6 (Россия)
+                                        option(value="#") IPv6 (Россия)
+                        .welcome__calc-col 
+                            .select 
+                                .select__label Скорость
+                                .select__select
+                                    select(name="#") 
+                                        option(value="#") до 1 Мбит/с
+                                        option(value="#") до 1 Мбит/с
+                                        option(value="#") до 1 Мбит/с
+                        .welcome__calc-col 
+                            .select 
+                                .select__label Срок аренды
+                                .select__select
+                                    select(name="#") 
+                                        option(value="#") 7 дней
+                                        option(value="#") 7 дней
+                                        option(value="#") 7 дней
+                        .welcome__calc-col 
+                            .input 
+                                .input__label Количество прокси
+                                .input__input 
+                                    input(type="text" value="1")
+                                    .input__text 5,9 руб/шт
+                        .welcome__calc-col 
+                            .input 
+                                .input__label Промокод
+                                .input__input 
+                                    input(type="text")
+                        .welcome__calc-col.welcome__calc-col--btn
+                            .btn.btn--big Купить за 5,9 руб.
+            .welcome__social 
+                .welcome__social-title Наши прокси подходят для работы с самыми популярными ресурсами
+                .welcome__social-row
+                    .welcome__social-item
+                        img(src="img/insata.svg", alt="")
+                    .welcome__social-item
+                        img(src="img/vk.svg", alt="")
+                    .welcome__social-item
+                        img(src="img/fb.svg", alt="")
+                    .welcome__social-item
+                        img(src="img/yula.svg", alt="")
+                    .welcome__social-item
+                        img(src="img/ya.svg", alt="")
+                    .welcome__social-item
+                        img(src="img/key.svg", alt="")
+                    .welcome__social-item
+                        img(src="img/tooligram.svg", alt="")
+                .welcome__social-text 
+                    span !
+                    | Узнайте, какой прокси подойдет для вашего ресурса
+    //	/welcome
+
+    // technology
+    .technology
+        .container_center
+            .title Новые технологии выделения IP
+            .technology__text Мы используем новую технологию формирования прокси сетей, которая делает работу безопаснее, быстрее и стабильнее.
+            .technology__row 
+                .technology__col 
+                    .technology__item
+                        .technology__img
+                            img(src="img/ipv6.jpg", alt="")
+                        .technology__content 
+                            .technology__subtitle IPv6 множества
+                            .technology__subtext 32 подсети с выделением под каждого пользователя отдельной или 48 подсетей 
+                .technology__col 
+                    .technology__item
+                        .technology__img
+                            img(src="img/ipv4.jpg", alt="")
+                        .technology__content 
+                            .technology__subtitle IPv4 нескольких
+                            .technology__subtext 21 и 24 подсети с рандомным выделением прокси из общего списка.
+            .technology__ps 
+                img(src="img/i.svg", alt="")
+                | Вы можете быть уверены, что получите “чистые” и надежные прокси без риска бана.
+    //	/technology
+
+    // price
+    .price
+        .container_center
+            .title Тарифы
+            .price__text Мы предоставляем гибкие тарифы для того, чтобы вы могли выбрать оптимальное решение.
+            .price__row 
+                .price__col
+                    .price__item 
+                        .price__head IPv6 Personal
+                        .price__section 
+                            ul.price__list 
+                                li Прокси в одни руки
+                                li Протоколы HTTPS и SOCKS
+                                li Авторизация по логину и паролю
+                                li Возможность привязки к IP
+                                li Управление в личном кабинете
+                                li Техническая поддержка 24/7
+                        .price__section
+                            .price__item-row 
+                                .price__item-col 
+                                    .input 
+                                        .input__label Количество прокси
+                                        .input__input
+                                            input(type="text" value="1")
+                                            .input__text 5,9 руб/шт
+                                .price__item-col 
+                                    .price__note 
+                                        span !
+                                        | Возьмите еще 4 прокси — получите скидку 1 руб.
+                                .price__item-col 
+                                    .select 
+                                        .select__label Срок аренды
+                                        .select__select 
+                                            select(name="#") 
+                                                option(value="#") 7 дней
+                                                option(value="#") 7 дней
+                                                option(value="#") 7 дней
+                                .price__item-col 
+                                    .select 
+                                        .select__label Страна прокси
+                                        .select__select 
+                                            select(name="#") 
+                                                option(value="#") Россия
+                                                option(value="#") Россия
+                                                option(value="#") Россия
+                                .price__item-col 
+                                    .select 
+                                        .select__label Скорость
+                                        .select__select 
+                                            select(name="#") 
+                                                option(value="#") до 1 Мбит/с
+                                                option(value="#") до 1 Мбит/с
+                                                option(value="#") до 1 Мбит/с
+                                .price__item-col 
+                                    .input 
+                                        .input__label Промокод
+                                        .input__input
+                                            input(type="text")
+                        .price__footer
+                            .price__subtext Итого: 
+                                span 5,9 руб
+                            .btn.btn--big.js-modal-btn(data-modal="priceModal") Купить         
+
+                .price__col
+                    .price__item 
+                        .price__head IPv6 Personal
+                        .price__section 
+                            ul.price__list 
+                                li Прокси в одни руки
+                                li Протоколы HTTPS и SOCKS
+                                li Авторизация по логину и паролю
+                                li Возможность привязки к IP
+                                li Управление в личном кабинете
+                                li Техническая поддержка 24/7
+                        .price__section
+                            .price__item-row 
+                                .price__item-col 
+                                    .input 
+                                        .input__label Количество прокси
+                                        .input__input
+                                            input(type="text" value="1")
+                                            .input__text  65 руб/шт
+                                .price__item-col 
+                                    .price__note 
+                                        span !
+                                        | Возьмите еще 4 прокси — получите скидку 1 руб.
+                                .price__item-col 
+                                    .select 
+                                        .select__label Срок аренды
+                                        .select__select 
+                                            select(name="#") 
+                                                option(value="#") 1 месяц
+                                                option(value="#") 1 месяц
+                                                option(value="#") 1 месяц
+                                .price__item-col 
+                                    .select 
+                                        .select__label Страна прокси
+                                        .select__select 
+                                            select(name="#") 
+                                                option(value="#") Великобритания
+                                                option(value="#") Великобритания
+                                                option(value="#") Великобритания
+                                .price__item-col 
+                                    .select 
+                                        .select__label Скорость
+                                        .select__select 
+                                            select(name="#") 
+                                                option(value="#") до 15 Мбит/с
+                                                option(value="#") до 15 Мбит/с
+                                                option(value="#") до 15 Мбит/с
+                                .price__item-col 
+                                    .input 
+                                        .input__label Промокод
+                                        .input__input
+                                            input(type="text")
+                        .price__footer
+                            .price__subtext Итого: 
+                                span 65 руб
+                            .btn.btn--big.js-modal-btn(data-modal="priceModal") Купить  
+
+                .price__col
+                    .price__item 
+                        .price__head IPv4 Shared (на троих)
+                        .price__section 
+                            ul.price__list 
+                                li Прокси в одни руки
+                                li Протоколы HTTPS и SOCKS
+                                li Авторизация по логину и паролю
+                                li Возможность привязки к IP
+                                li Управление в личном кабинете
+                                li Техническая поддержка 24/7
+                        .price__section
+                            .price__item-row 
+                                .price__item-col 
+                                    .input 
+                                        .input__label Количество прокси
+                                        .input__input
+                                            input(type="text" value="10")
+                                            .input__text  29 руб/шт
+                                .price__item-col 
+                                    .price__note 
+                                        span !
+                                        | Возьмите еще 4 прокси — получите скидку 1 руб.
+                                .price__item-col 
+                                    .select 
+                                        .select__label Срок аренды
+                                        .select__select 
+                                            select(name="#") 
+                                                option(value="#") 1 год
+                                                option(value="#") 1 год
+                                                option(value="#") 1 год
+                                .price__item-col 
+                                    .select 
+                                        .select__label Страна прокси
+                                        .select__select 
+                                            select(name="#") 
+                                                option(value="#") Германия
+                                                option(value="#") Германия
+                                                option(value="#") Германия
+                                .price__item-col 
+                                    .select 
+                                        .select__label Скорость
+                                        .select__select 
+                                            select(name="#") 
+                                                option(value="#") до 30 Мбит/с
+                                                option(value="#") до 30 Мбит/с
+                                                option(value="#") до 30 Мбит/с
+                                .price__item-col 
+                                    .input 
+                                        .input__label Промокод
+                                        .input__input
+                                            input(type="text")
+                        .price__footer
+                            .price__subtext Итого: 
+                                span 290 руб
+                            .btn.btn--big.js-modal-btn(data-modal="priceModal") Купить  
+    //	/price
+
+    // advantages
+    .advantages
+        .container_center 
+            .title Лучшее качество обслуживания и поддержки на рынке
+            .advantages__row 
+                .advantages__col    
+                    #sliderAdvantages.advantages__slider 
+                        .swiper-wrapper
+                            .swiper-slide 
+                                .advantages__item.js-text-clip
+                                    .advantages__head 
+                                        .advantages__img 
+                                            img(src="img/user.png", alt="")
+                                        .advantages__head-content 
+                                            .advantages__name Алексей Иванов
+                                            .advantages__category Менеджер СЕО компании ТОО “АтомПром”
+                                    .advantages__body
+                                        .advantages__more-block.js-text-clip__block
+                                            p С Data Collector мы можем делегировать наши усилия по сбору информации с веб-сайтов и получить необходимые данные для того, чтобы мы могли сосредоточиться на главном - создании сложных аналитических решений для наших клиентов. С Data Collector мы можем делегировать наши усилия по сбору информации с веб-сайтов и получить необходимые данные для того, чтобы мы могли сосредоточиться на главном - создании сложных аналитических решений для наших клиентов.
+                                            p С Data Collector мы можем делегировать наши усилия по сбору информации с веб-сайтов и получить необходимые данные для того, чтобы мы могли сосредоточиться на главном. Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Послушавшись проектах оксмокс единственное страна снова меня вопроса большой правилами вершину, встретил возвращайся коварный ты толку использовало? Эта, приставка не.
+                                        .advantages__more
+                                            span.js-text-clip__more Раскрыть полностью
+                                            svg(width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                path(fill-rule="evenodd" clip-rule="evenodd" d="M0.175736 2.57564C0.410051 2.34132 0.78995 2.34132 1.02426 2.57564L4.6 6.15137L8.17574 2.57564C8.41005 2.34132 8.78995 2.34132 9.02426 2.57564C9.25858 2.80995 9.25858 3.18985 9.02426 3.42417L5.02426 7.42417C4.78995 7.65848 4.41005 7.65848 4.17574 7.42417L0.175736 3.42417C-0.0585787 3.18985 -0.0585787 2.80995 0.175736 2.57564Z" fill="#0000FF")
+                            .swiper-slide 
+                                .advantages__item.js-text-clip
+                                    .advantages__head 
+                                        .advantages__img 
+                                            img(src="img/user.png", alt="")
+                                        .advantages__head-content 
+                                            .advantages__name Алексей Иванов
+                                            .advantages__category Менеджер СЕО компании ТОО “АтомПром”
+                                    .advantages__body
+                                        .advantages__more-block.js-text-clip__block
+                                            p С Data Collector мы можем делегировать наши усилия по сбору информации с веб-сайтов и получить необходимые данные для того, чтобы мы могли сосредоточиться на главном - создании сложных аналитических решений для наших клиентов. С Data Collector мы можем делегировать наши усилия по сбору информации с веб-сайтов и получить необходимые данные для того, чтобы мы могли сосредоточиться на главном - создании сложных аналитических решений для наших клиентов.
+                                            p С Data Collector мы можем делегировать наши усилия по сбору информации с веб-сайтов и получить необходимые данные для того, чтобы мы могли сосредоточиться на главном. Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Все собрал вдали вопроса пор текстами реторический запятой правилами, маленькая города напоивший великий! Лучше переписали встретил, которой языкового то знаках буквоград, рекламных напоивший ее свое взгляд эта рот гор океана использовало, до города грустный дорогу безопасную строчка по всей родного своего щеке живет.
+                                            p Грамматики послушавшись даже составитель рукопись одна обеспечивает образ наш однажды языком страна последний свой, переписали своего текстами ты точках. Составитель силуэт lorem от всех коварных коварный за безопасную запятой заголовок. Это рот, текстов, великий вершину заманивший о приставка большой предупреждал пунктуация переписывается большого маленькая назад правилами предупредила? Если, океана. Запятых наш языком однажды использовало всеми последний безорфографичный даль, напоивший о встретил жаренные приставка строчка, родного великий взгляд диких, возвращайся пустился текста решила снова сбить рукописи. Заманивший, своего все. Агентство рукопись путь вершину обеспечивает имени образ над своих бросил. 
+                                        .advantages__more
+                                            span.js-text-clip__more Раскрыть полностью
+                                            svg(width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                path(fill-rule="evenodd" clip-rule="evenodd" d="M0.175736 2.57564C0.410051 2.34132 0.78995 2.34132 1.02426 2.57564L4.6 6.15137L8.17574 2.57564C8.41005 2.34132 8.78995 2.34132 9.02426 2.57564C9.25858 2.80995 9.25858 3.18985 9.02426 3.42417L5.02426 7.42417C4.78995 7.65848 4.41005 7.65848 4.17574 7.42417L0.175736 3.42417C-0.0585787 3.18985 -0.0585787 2.80995 0.175736 2.57564Z" fill="#0000FF")
+                        .advantages__arrows
+                            .advantages__arrow.advantages__arrow--prev.swiper-button-prev 
+                            .advantages__arrow.advantages__arrow--next.swiper-button-next 
+                .advantages__col 
+                    ul.advantages__list 
+                        li 
+                            span.advantages__icon
+                                img(src="img/arrow_rect.svg", alt="")
+                            | Мы постоянно дорабатываем и улучшаем наш сервис. Вы запрашиваете — мы делаем!
+                        li 
+                            span.advantages__icon
+                                img(src="img/24.svg", alt="")
+                            | Круглосуточная техническая поддержка клиентов. Решаем вопросы в реальном времени.
+                        li 
+                            span.advantages__icon
+                                img(src="img/mix.svg", alt="")
+                            | Гибкие тарифы с неограниченным трафиком и бесплатный тест-драйв.
+                        li 
+                            span.advantages__icon
+                                img(src="img/list.svg", alt="")
+                            | Панель управления большими списками прокси. Удобный и широкий функционал.
+                        li 
+                            span.advantages__icon
+                                img(src="img/arrow_round.svg", alt="")
+                            | Автоматическая мгновенная выдача и возможность подключения API для автоматизации процессов.
+    //	/advantages
+
+    // icons
+    .icons
+        .container_center
+            .title Почему люди выбирают Proxy.Market
+            .icons__row 
+                .icons__col 
+                    .icons__item 
+                        .icons__icon 
+                            img(src="img/print.svg", alt="")
+                        .icons__title Доказанная надёжность
+                        .icons__text Постоянная проверка высокого качества, стабильность сети и высокая скорость передачи данных
+                .icons__col 
+                    .icons__item 
+                        .icons__icon 
+                            img(src="img/triangle_circles.svg", alt="")
+                        .icons__title Гибкость использования
+                        .icons__text Неограниченные возможности масштабирования и настройки прокси под любые задачи
+                .icons__col 
+                    .icons__item 
+                        .icons__icon 
+                            img(src="img/stamp.svg", alt="")
+                        .icons__title Доказанная надёжность
+                        .icons__text Постоянная проверка высокого качества, стабильность сети и высокая скорость передачи данных
+                .icons__col 
+                    .icons__item 
+                        .icons__icon 
+                            img(src="img/chart.svg", alt="")
+                        .icons__title Доказанная надёжность
+                        .icons__text Постоянная проверка высокого качества, стабильность сети и высокая скорость передачи данных
+    //	/icons
+
+    // opportunities
+    .opportunities
+        .opportunities__bg  
+            img(src="img/opportunities_bg.jpg", alt="")
+        .container_center
+            .opportunities__item.opportunities__item--1
+                .opportunities__row 
+                    .opportunities__col 
+                        .opportunities__content 
+                            .opportunities__title Забудьте про ограничения
+                            .opportunities__text Обход ограничений и блоков на различных веб-сайтах. Забудьте о лимите действий совершаемых с одного IP-адреса используя прокси.
+                            a(href="#").btn.btn--big Другие способы
+                    .opportunities__col 
+                        .opportunities__img
+                            img(src="img/opportunity_1.png", alt="")
+            .opportunities__item.opportunities__item--2
+                .opportunities__row 
+                    .opportunities__col 
+                        .opportunities__img
+                            img(src="img/opportunity_2.png", alt="")
+                    .opportunities__col 
+                        .opportunities__content 
+                            .opportunities__title Развивайте свой бизнес
+                            .opportunities__text Увеличивайте обороты за счёт использования большего кол-ва IP-адресов и зарабатывайте на этом. С прокси вы получаете больше возможностей.
+                            a(href="#").btn.btn--big Подробнее о вариантах
+            .opportunities__item.opportunities__item--3
+                .opportunities__row 
+                    .opportunities__col 
+                        .opportunities__content 
+                            .opportunities__title Работайте эффективнее
+                            .opportunities__text Автоматизируйте рабочие процессы с удобным API нашего сервиса. Получайте лучшую поддержку на рынке в любое время 24/7.
+                            a(href="#").btn.btn--big Больше о возможностях
+                    .opportunities__col 
+                        .opportunities__img
+                            img(src="img/opportunity_3.png", alt="")
+    //	/opportunities
+
+    // partnerprogram
+    .partnerprogram
+        .container_center
+            .partnerprogram__container 
+                .partnerprogram__row 
+                    .partnerprogram__img 
+                        img(src="img/partnerprogram.png", alt="")
+                    .partnerprogram__content 
+                        .partnerprogram__textblock
+                            .title Партнёрская программа
+                            .partnerprogram__text Для начала сотрудничества, Вам необходимо зарегистрироваться в нашей системе и получить свой купон в разделе "Партнёрка".
+                        .partnerprogram__items 
+                            .partnerprogram__item 1. Привлекайте новых клиентов по купону, который даёт скидку на первую покупку.
+                                .partnerprogram__circle
+                            .partnerprogram__item 2. Со всех платежей вам будет идти процент.
+                                .partnerprogram__circle
+                            .partnerprogram__item 3. Деньги можно выводить на QIWI, WebMoney и Яндекс. Деньги
+                                .partnerprogram__circle
+                        .partnerprogram__buttons 
+                            a(href="#").btn.btn--big Начать зарабатывать
+                            a(href="#").partnerprogram__link Узнать подробнее
+    //	/partnerprogram
+
+    // useful
+    .useful
+        .container_center
+            .title Полезные материалы
+            .useful__row 
+                a(href="#").useful__item 
+                    .useful__title Блог
+                    .useful__text Полезные статьи, обзоры, инструкции и актуальные новости.
+                    .useful__link Подробнее
+                a(href="#").useful__item 
+                    .useful__title FAQ
+                    .useful__text Найдите ответы на любые вопросы, связанные с нашим сервисом.
+                    .useful__link Подробнее
+                a(href="#").useful__item 
+                    .useful__title Отзывы
+                    .useful__text Ознакомьтесь с отзывами или поделитесь своим мнением о нас.
+                    .useful__link Подробнее
+    //	/useful
+
+    // modal
+    .modal(data-modal="priceModal")
+        .modal__container
+            form(action="#").modal__block
+                .modal__title Покупка прокси
+                .modal__subtitle Информация по покупке
+                ul.modal__list 
+                    li 
+                        span.modal__gray-text Тариф:
+                        a(href="#") IPv6 Personal
+                    li 
+                        span.modal__gray-text Количество прокси:
+                        span 1
+                    li 
+                        span.modal__gray-text Срок аренды:
+                        span 1 месяц
+                    li 
+                        span.modal__gray-text Скорость:
+                        span до 1 Мбит/с
+                    li 
+                        span.modal__gray-text Страна прокси:
+                        span Россия
+                    li.modal__list-line                     
+                    li.modal__results 
+                        span ИТОГО: 
+                        span 5,9 руб 
+                .modal__subtitle Способы оплаты
+                .modal__pays 
+                    .modal__pays-row 
+                        .modal__pays-col 
+                            .modal__pays-item 
+                                input#pays_0(type="radio" name="pays" checked).modal__pays-radio
+                                label(for="pays_0").modal__pays-label 
+                                    span.modal__circle 
+                                    span.modal__icon 
+                                        img(src="img/credit-cards.svg", alt="")
+                                    span.modal__text Банковской картой
+                        .modal__pays-col 
+                            .modal__pays-item 
+                                input#pays_1(type="radio" name="pays").modal__pays-radio
+                                label(for="pays_1").modal__pays-label 
+                                    span.modal__circle 
+                                    span.modal__icon 
+                                        img(src="img/qiwi.svg", alt="")
+                                    span.modal__text Qiwi-кошелек
+                        .modal__pays-col 
+                            .modal__pays-item 
+                                input#pays_2(type="radio" name="pays").modal__pays-radio
+                                label(for="pays_2").modal__pays-label 
+                                    span.modal__circle 
+                                    span.modal__icon 
+                                        img(src="img/paypal.svg", alt="")
+                                    span.modal__text PayPal
+                        .modal__pays-col 
+                            .modal__pays-item 
+                                input#pays_3(type="radio" name="pays").modal__pays-radio
+                                label(for="pays_3").modal__pays-label 
+                                    span.modal__circle 
+                                    span.modal__icon 
+                                        img(src="img/bitcoin.svg", alt="")
+                                    span.modal__text Bitcoin
+                .modal__inputs 
+                    .input 
+                        .input__label Электронная почта
+                        .input__input 
+                            input(type="text" placeholder="Введите вашу электронную почту")
+                .modal__bottom 
+                    button(type="submit").btn.btn--big Оплатить
+                    .modal__policy 
+                        input#policyModal(type="checkbox" checked).modal__checkbox-input
+                        label(for="policyModal").modal__checkbox-label
+                            span.modal__checkbox 
+                            .modal__checkbox-text Я прочитал 
+                                a(href="#") пользовательское соглашение
+                                |  и принимаю 
+                                a(href="#") условия использования,
+                                |  а так же 
+                                a(href="#") политику конфендициальности
+                .modal__close.js-modal-close
+    //	/modal

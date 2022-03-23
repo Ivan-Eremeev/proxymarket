@@ -1,0 +1,88 @@
+.comments {
+    margin-bottom: 5.625em;
+    .title {
+        margin-bottom: 1em;
+    }
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -1.875em;
+        margin-left: -1.875em;
+        padding-bottom: 3.75em;
+    }
+    &__col {
+        width: 100%;
+        padding-top: 1.875em;
+        padding-left: 1.875em;
+    }
+    &__pagination {
+        display: flex;
+        justify-content: center;
+        padding-top: 3.75em;
+        border-top: 1px solid #E1E1E3;
+    }
+    &__pagination-list {
+        font-size: 0.75em;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        list-style-type: none;
+        margin-left: -0.9375em;
+        margin-top: 0;
+        margin-bottom: 0;
+        li {
+            margin-left: 0.9375em;
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 3.4375em;
+                height: 3.4375em;
+                text-decoration: none;
+                color: #B4B4B4;
+                background: #FFF;
+                border: 1px solid #E3E3E3;
+                border-radius: 0.5em;
+                &.active {
+                    color: $color_primary;
+                    background: transparent;
+                    border-color: transparent;
+                }
+                &:hover {
+                    &:not(.active) {
+                        color: $main_color;
+                        border-color: $main_color;
+                    }
+                }
+            }
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 3.4375em;
+                height: 3.4375em;
+                color: #B4B4B4;
+            }
+        }
+    }
+    &__pagination-arrow {
+        svg {
+            width: 2.3em;
+            fill: #858585;
+            transition: 0.3s;
+        }
+        &:hover {
+            svg {
+                fill: $main_color;
+            }
+        }
+    }
+    @media (min-width: $break_sm + 1) {
+        &__col {
+            width: 50%;
+        }
+        &__pagination-list {
+            font-size: 1px;
+        }
+    }
+}

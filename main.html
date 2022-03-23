@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>Proxymarket</title>
+		<link rel="stylesheet" href="css/swiper-bundle.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css?0.1"/>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__content">
+				<div class="header__left"><a class="logo" href="/"><img src="img/logo.svg" alt="alt"/></a></div>
+				<nav class="header__right">
+					<div class="nav">
+						<ul class="navbar">
+							<li class="navbar__item"><a class="navbar__link" href="">Инструменты</a>
+								<div class="navbar__drop"> 
+									<ul class="lang__list"> 
+										<li> <a href="#">Чекер прокси</a></li>
+										<li> <a href="#">Конвертер форматов</a></li>
+										<li> <a href="#">Поддержка IPv6</a></li>
+										<li> <a href="#">Генератор UTM-меток</a></li>
+										<li> <a href="#">Скорость прокси</a></li>
+										<li> <a href="#">Мой IP</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="navbar__item"><a class="navbar__link" href="">Информация</a></li>
+							<li class="navbar__item"><a class="navbar__link" href="">Компания</a></li>
+						</ul>
+						<div class="lang mobile"> 
+							<div class="lang__trigger">Ru
+								<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M0.175736 0.575638C0.410051 0.341324 0.78995 0.341324 1.02426 0.575638L4.6 4.15137L8.17574 0.575638C8.41005 0.341324 8.78995 0.341324 9.02426 0.575638C9.25858 0.809953 9.25858 1.18985 9.02426 1.42417L5.02426 5.42417C4.78995 5.65848 4.41005 5.65848 4.17574 5.42417L0.175736 1.42417C-0.0585787 1.18985 -0.0585787 0.809953 0.175736 0.575638Z"></path>
+								</svg>
+							</div>
+							<div class="lang__drop"> 
+								<ul class="lang__list"> 
+									<li> <a href="#">En</a></li>
+									<li> <a href="#">Fra</a></li>
+									<li> <a href="#">De</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="btn mobile">Войти</div>
+					</div>
+					<div class="lang desktop">
+						<div class="lang__trigger">Ru
+							<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M0.175736 0.575638C0.410051 0.341324 0.78995 0.341324 1.02426 0.575638L4.6 4.15137L8.17574 0.575638C8.41005 0.341324 8.78995 0.341324 9.02426 0.575638C9.25858 0.809953 9.25858 1.18985 9.02426 1.42417L5.02426 5.42417C4.78995 5.65848 4.41005 5.65848 4.17574 5.42417L0.175736 1.42417C-0.0585787 1.18985 -0.0585787 0.809953 0.175736 0.575638Z"></path>
+							</svg>
+						</div>
+						<div class="lang__drop"> 
+							<ul class="lang__list"> 
+								<li> <a href="#">En</a></li>
+								<li> <a href="#">Fra</a></li>
+								<li> <a href="#">De</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="btn desktop">Войти</div>
+					<div class="navbar__toggle"></div>
+				</nav>
+			</div>
+		</header>
+		<main class="main_content">
+			<!-- welcome-->
+			<div class="welcome">
+				<div class="welcome__img"> <img src="img/welcome_bg.jpg" alt=""/></div>
+				<div class="container_center"> 
+					<div class="welcome__raiting"> 
+						<div class="welcome__raiting-row"><span>Excellent — 4,4</span><img class="welcome__raiting__img1" src="img/raiting.png" alt=""/><img class="welcome__raiting__img2" src="img/raiting_2.png" alt=""/></div>
+					</div>
+					<div class="welcome__content"> 
+						<div class="welcome__title">Качественные прокси IPv4 и IPv6</div>
+						<div class="welcome__text">для социальных сетей, парсинга и любых других задач с выделением индивидуальной подсети</div>
+					</div>
+					<div class="welcome__calc"> 
+						<div class="welcome__calc-head">
+							<div class="welcome__calc-title">Онлайн-калькулятор </div>
+							<div class="welcome__calc-text"> <span>!</span>Возьмите еще 4 прокси — получите скидку 1 руб.</div>
+						</div>
+						<div class="welcome__calc-body"> 
+							<div class="welcome__calc-row"> 
+								<div class="welcome__calc-col"> 
+									<div class="select"> 
+										<div class="select__label">Тип прокси</div>
+										<div class="select__select">
+											<select name="#"> 
+												<option value="#">IPv6 (Россия)</option>
+												<option value="#">IPv6 (Россия)</option>
+												<option value="#">IPv6 (Россия)</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="welcome__calc-col"> 
+									<div class="select"> 
+										<div class="select__label">Скорость</div>
+										<div class="select__select">
+											<select name="#"> 
+												<option value="#">до 1 Мбит/с</option>
+												<option value="#">до 1 Мбит/с</option>
+												<option value="#">до 1 Мбит/с</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="welcome__calc-col"> 
+									<div class="select"> 
+										<div class="select__label">Срок аренды</div>
+										<div class="select__select">
+											<select name="#"> 
+												<option value="#">7 дней</option>
+												<option value="#">7 дней</option>
+												<option value="#">7 дней</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="welcome__calc-col"> 
+									<div class="input"> 
+										<div class="input__label">Количество прокси</div>
+										<div class="input__input"> 
+											<input type="text" value="1"/>
+											<div class="input__text">5,9 руб/шт</div>
+										</div>
+									</div>
+								</div>
+								<div class="welcome__calc-col"> 
+									<div class="input"> 
+										<div class="input__label">Промокод</div>
+										<div class="input__input"> 
+											<input type="text"/>
+										</div>
+									</div>
+								</div>
+								<div class="welcome__calc-col welcome__calc-col--btn">
+									<div class="btn btn--big">Купить за 5,9 руб.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="welcome__social"> 
+						<div class="welcome__social-title">Наши прокси подходят для работы с самыми популярными ресурсами</div>
+						<div class="welcome__social-row">
+							<div class="welcome__social-item"><img src="img/insata.svg" alt=""/></div>
+							<div class="welcome__social-item"><img src="img/vk.svg" alt=""/></div>
+							<div class="welcome__social-item"><img src="img/fb.svg" alt=""/></div>
+							<div class="welcome__social-item"><img src="img/yula.svg" alt=""/></div>
+							<div class="welcome__social-item"><img src="img/ya.svg" alt=""/></div>
+							<div class="welcome__social-item"><img src="img/key.svg" alt=""/></div>
+							<div class="welcome__social-item"><img src="img/tooligram.svg" alt=""/></div>
+						</div>
+						<div class="welcome__social-text"> <span>!</span>Узнайте, какой прокси подойдет для вашего ресурса</div>
+					</div>
+				</div>
+			</div>
+			<!--	/welcome-->
+			<!-- technology-->
+			<div class="technology">
+				<div class="container_center">
+					<div class="title">Новые технологии выделения IP</div>
+					<div class="technology__text">Мы используем новую технологию формирования прокси сетей, которая делает работу безопаснее, быстрее и стабильнее.</div>
+					<div class="technology__row"> 
+						<div class="technology__col"> 
+							<div class="technology__item">
+								<div class="technology__img"><img src="img/ipv6.jpg" alt=""/></div>
+								<div class="technology__content"> 
+									<div class="technology__subtitle">IPv6 множества</div>
+									<div class="technology__subtext">32 подсети с выделением под каждого пользователя отдельной или 48 подсетей </div>
+								</div>
+							</div>
+						</div>
+						<div class="technology__col"> 
+							<div class="technology__item">
+								<div class="technology__img"><img src="img/ipv4.jpg" alt=""/></div>
+								<div class="technology__content"> 
+									<div class="technology__subtitle">IPv4 нескольких</div>
+									<div class="technology__subtext">21 и 24 подсети с рандомным выделением прокси из общего списка.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="technology__ps"> <img src="img/i.svg" alt=""/>Вы можете быть уверены, что получите “чистые” и надежные прокси без риска бана.</div>
+				</div>
+			</div>
+			<!--	/technology-->
+			<!-- price-->
+			<div class="price">
+				<div class="container_center">
+					<div class="title">Тарифы</div>
+					<div class="price__text">Мы предоставляем гибкие тарифы для того, чтобы вы могли выбрать оптимальное решение.</div>
+					<div class="price__row"> 
+						<div class="price__col">
+							<div class="price__item"> 
+								<div class="price__head">IPv6 Personal</div>
+								<div class="price__section"> 
+									<ul class="price__list"> 
+										<li>Прокси в одни руки</li>
+										<li>Протоколы HTTPS и SOCKS</li>
+										<li>Авторизация по логину и паролю</li>
+										<li>Возможность привязки к IP</li>
+										<li>Управление в личном кабинете</li>
+										<li>Техническая поддержка 24/7</li>
+									</ul>
+								</div>
+								<div class="price__section">
+									<div class="price__item-row"> 
+										<div class="price__item-col"> 
+											<div class="input"> 
+												<div class="input__label">Количество прокси</div>
+												<div class="input__input">
+													<input type="text" value="1"/>
+													<div class="input__text">5,9 руб/шт</div>
+												</div>
+											</div>
+										</div>
+										<div class="price__item-col"> 
+											<div class="price__note"> <span>!</span>Возьмите еще 4 прокси — получите скидку 1 руб.</div>
+										</div>
+										<div class="price__item-col"> 
+											<div class="select"> 
+												<div class="select__label">Срок аренды</div>
+												<div class="select__select"> 
+													<select name="#"> 
+														<option value="#">7 дней</option>
+														<option value="#">7 дней</option>
+														<option value="#">7 дней</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="price__item-col"> 
+											<div class="select"> 
+												<div class="select__label">Страна прокси</div>
+												<div class="select__select"> 
+													<select name="#"> 
+														<option value="#">Россия</option>
+														<option value="#">Россия</option>
+														<option value="#">Россия</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="price__item-col"> 
+											<div class="select"> 
+												<div class="select__label">Скорость</div>
+												<div class="select__select"> 
+													<select name="#"> 
+														<option value="#">до 1 Мбит/с</option>
+														<option value="#">до 1 Мбит/с</option>
+														<option value="#">до 1 Мбит/с</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="price__item-col"> 
+											<div class="input"> 
+												<div class="input__label">Промокод</div>
+												<div class="input__input">
+													<input type="text"/>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="price__footer">
+									<div class="price__subtext">Итого: <span>5,9 руб</span></div>
+									<div class="btn btn--big js-modal-btn" data-modal="priceModal">Купить         </div>
+								</div>
+							</div>
+						</div>
+						<div class="price__col">
+							<div class="price__item"> 
+								<div class="price__head">IPv6 Personal</div>
+								<div class="price__section"> 
+									<ul class="price__list"> 
+										<li>Прокси в одни руки</li>
+										<li>Протоколы HTTPS и SOCKS</li>
+										<li>Авторизация по логину и паролю</li>
+										<li>Возможность привязки к IP</li>
+										<li>Управление в личном кабинете</li>
+										<li>Техническая поддержка 24/7</li>
+									</ul>
+								</div>
+								<div class="price__section">
+									<div class="price__item-row"> 
+										<div class="price__item-col"> 
+											<div class="input"> 
+												<div class="input__label">Количество прокси</div>
+												<div class="input__input">
+													<input type="text" value="1"/>
+													<div class="input__text"> 65 руб/шт</div>
+												</div>
+											</div>
+										</div>
+										<div class="price__item-col"> 
+											<div class="price__note"> <span>!</span>Возьмите еще 4 прокси — получите скидку 1 руб.</div>
+										</div>
+										<div class="price__item-col"> 
+											<div class="select"> 
+												<div class="select__label">Срок аренды</div>
+												<div class="select__select"> 
+													<select name="#"> 
+														<option value="#">1 месяц</option>
+														<option value="#">1 месяц</option>
+														<option value="#">1 месяц</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="price__item-col"> 
+											<div class="select"> 
+												<div class="select__label">Страна прокси</div>
+												<div class="select__select"> 
+													<select name="#"> 
+														<option value="#">Великобритания</option>
+														<option value="#">Великобритания</option>
+														<option value="#">Великобритания</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="price__item-col"> 
+											<div class="select"> 
+												<div class="select__label">Скорость</div>
+												<div class="select__select"> 
+													<select name="#"> 
+														<option value="#">до 15 Мбит/с</option>
+														<option value="#">до 15 Мбит/с</option>
+														<option value="#">до 15 Мбит/с</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="price__item-col"> 
+											<div class="input"> 
+												<div class="input__label">Промокод</div>
+												<div class="input__input">
+													<input type="text"/>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="price__footer">
+									<div class="price__subtext">Итого: <span>65 руб</span></div>
+									<div class="btn btn--big js-modal-btn" data-modal="priceModal">Купить  </div>
+								</div>
+							</div>
+						</div>
+						<div class="price__col">
+							<div class="price__item"> 
+								<div class="price__head">IPv4 Shared (на троих)</div>
+								<div class="price__section"> 
+									<ul class="price__list"> 
+										<li>Прокси в одни руки</li>
+										<li>Протоколы HTTPS и SOCKS</li>
+										<li>Авторизация по логину и паролю</li>
+										<li>Возможность привязки к IP</li>
+										<li>Управление в личном кабинете</li>
+										<li>Техническая поддержка 24/7</li>
+									</ul>
+								</div>
+								<div class="price__section">
+									<div class="price__item-row"> 
+										<div class="price__item-col"> 
+											<div class="input"> 
+												<div class="input__label">Количество прокси</div>
+												<div class="input__input">
+													<input type="text" value="10"/>
+													<div class="input__text"> 29 руб/шт</div>
+												</div>
+											</div>
+										</div>
+										<div class="price__item-col"> 
+											<div class="price__note"> <span>!</span>Возьмите еще 4 прокси — получите скидку 1 руб.</div>
+										</div>
+										<div class="price__item-col"> 
+											<div class="select"> 
+												<div class="select__label">Срок аренды</div>
+												<div class="select__select"> 
+													<select name="#"> 
+														<option value="#">1 год</option>
+														<option value="#">1 год</option>
+														<option value="#">1 год</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="price__item-col"> 
+											<div class="select"> 
+												<div class="select__label">Страна прокси</div>
+												<div class="select__select"> 
+													<select name="#"> 
+														<option value="#">Германия</option>
+														<option value="#">Германия</option>
+														<option value="#">Германия</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="price__item-col"> 
+											<div class="select"> 
+												<div class="select__label">Скорость</div>
+												<div class="select__select"> 
+													<select name="#"> 
+														<option value="#">до 30 Мбит/с</option>
+														<option value="#">до 30 Мбит/с</option>
+														<option value="#">до 30 Мбит/с</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="price__item-col"> 
+											<div class="input"> 
+												<div class="input__label">Промокод</div>
+												<div class="input__input">
+													<input type="text"/>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="price__footer">
+									<div class="price__subtext">Итого: <span>290 руб</span></div>
+									<div class="btn btn--big js-modal-btn" data-modal="priceModal">Купить  </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--	/price-->
+			<!-- advantages-->
+			<div class="advantages">
+				<div class="container_center"> 
+					<div class="title">Лучшее качество обслуживания и поддержки на рынке</div>
+					<div class="advantages__row"> 
+						<div class="advantages__col">   
+							<div class="advantages__slider" id="sliderAdvantages"> 
+								<div class="swiper-wrapper">
+									<div class="swiper-slide"> 
+										<div class="advantages__item js-text-clip">
+											<div class="advantages__head"> 
+												<div class="advantages__img"> <img src="img/user.png" alt=""/></div>
+												<div class="advantages__head-content"> 
+													<div class="advantages__name">Алексей Иванов</div>
+													<div class="advantages__category">Менеджер СЕО компании ТОО “АтомПром”</div>
+												</div>
+											</div>
+											<div class="advantages__body">
+												<div class="advantages__more-block js-text-clip__block">
+													<p>С Data Collector мы можем делегировать наши усилия по сбору информации с веб-сайтов и получить необходимые данные для того, чтобы мы могли сосредоточиться на главном - создании сложных аналитических решений для наших клиентов. С Data Collector мы можем делегировать наши усилия по сбору информации с веб-сайтов и получить необходимые данные для того, чтобы мы могли сосредоточиться на главном - создании сложных аналитических решений для наших клиентов.</p>
+													<p>С Data Collector мы можем делегировать наши усилия по сбору информации с веб-сайтов и получить необходимые данные для того, чтобы мы могли сосредоточиться на главном. Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Послушавшись проектах оксмокс единственное страна снова меня вопроса большой правилами вершину, встретил возвращайся коварный ты толку использовало? Эта, приставка не.</p>
+												</div>
+												<div class="advantages__more"><span class="js-text-clip__more">Раскрыть полностью</span>
+													<svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M0.175736 2.57564C0.410051 2.34132 0.78995 2.34132 1.02426 2.57564L4.6 6.15137L8.17574 2.57564C8.41005 2.34132 8.78995 2.34132 9.02426 2.57564C9.25858 2.80995 9.25858 3.18985 9.02426 3.42417L5.02426 7.42417C4.78995 7.65848 4.41005 7.65848 4.17574 7.42417L0.175736 3.42417C-0.0585787 3.18985 -0.0585787 2.80995 0.175736 2.57564Z" fill="#0000FF"></path>
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide"> 
+										<div class="advantages__item js-text-clip">
+											<div class="advantages__head"> 
+												<div class="advantages__img"> <img src="img/user.png" alt=""/></div>
+												<div class="advantages__head-content"> 
+													<div class="advantages__name">Алексей Иванов</div>
+													<div class="advantages__category">Менеджер СЕО компании ТОО “АтомПром”</div>
+												</div>
+											</div>
+											<div class="advantages__body">
+												<div class="advantages__more-block js-text-clip__block">
+													<p>С Data Collector мы можем делегировать наши усилия по сбору информации с веб-сайтов и получить необходимые данные для того, чтобы мы могли сосредоточиться на главном - создании сложных аналитических решений для наших клиентов. С Data Collector мы можем делегировать наши усилия по сбору информации с веб-сайтов и получить необходимые данные для того, чтобы мы могли сосредоточиться на главном - создании сложных аналитических решений для наших клиентов.</p>
+													<p>С Data Collector мы можем делегировать наши усилия по сбору информации с веб-сайтов и получить необходимые данные для того, чтобы мы могли сосредоточиться на главном. Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Все собрал вдали вопроса пор текстами реторический запятой правилами, маленькая города напоивший великий! Лучше переписали встретил, которой языкового то знаках буквоград, рекламных напоивший ее свое взгляд эта рот гор океана использовало, до города грустный дорогу безопасную строчка по всей родного своего щеке живет.</p>
+													<p>Грамматики послушавшись даже составитель рукопись одна обеспечивает образ наш однажды языком страна последний свой, переписали своего текстами ты точках. Составитель силуэт lorem от всех коварных коварный за безопасную запятой заголовок. Это рот, текстов, великий вершину заманивший о приставка большой предупреждал пунктуация переписывается большого маленькая назад правилами предупредила? Если, океана. Запятых наш языком однажды использовало всеми последний безорфографичный даль, напоивший о встретил жаренные приставка строчка, родного великий взгляд диких, возвращайся пустился текста решила снова сбить рукописи. Заманивший, своего все. Агентство рукопись путь вершину обеспечивает имени образ над своих бросил. </p>
+												</div>
+												<div class="advantages__more"><span class="js-text-clip__more">Раскрыть полностью</span>
+													<svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M0.175736 2.57564C0.410051 2.34132 0.78995 2.34132 1.02426 2.57564L4.6 6.15137L8.17574 2.57564C8.41005 2.34132 8.78995 2.34132 9.02426 2.57564C9.25858 2.80995 9.25858 3.18985 9.02426 3.42417L5.02426 7.42417C4.78995 7.65848 4.41005 7.65848 4.17574 7.42417L0.175736 3.42417C-0.0585787 3.18985 -0.0585787 2.80995 0.175736 2.57564Z" fill="#0000FF"></path>
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="advantages__arrows">
+									<div class="advantages__arrow advantages__arrow--prev swiper-button-prev"> </div>
+									<div class="advantages__arrow advantages__arrow--next swiper-button-next"> </div>
+								</div>
+							</div>
+						</div>
+						<div class="advantages__col"> 
+							<ul class="advantages__list"> 
+								<li> <span class="advantages__icon"><img src="img/arrow_rect.svg" alt=""/></span>Мы постоянно дорабатываем и улучшаем наш сервис. Вы запрашиваете — мы делаем!</li>
+								<li> <span class="advantages__icon"><img src="img/24.svg" alt=""/></span>Круглосуточная техническая поддержка клиентов. Решаем вопросы в реальном времени.</li>
+								<li> <span class="advantages__icon"><img src="img/mix.svg" alt=""/></span>Гибкие тарифы с неограниченным трафиком и бесплатный тест-драйв.</li>
+								<li> <span class="advantages__icon"><img src="img/list.svg" alt=""/></span>Панель управления большими списками прокси. Удобный и широкий функционал.</li>
+								<li> <span class="advantages__icon"><img src="img/arrow_round.svg" alt=""/></span>Автоматическая мгновенная выдача и возможность подключения API для автоматизации процессов.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--	/advantages-->
+			<!-- icons-->
+			<div class="icons">
+				<div class="container_center">
+					<div class="title">Почему люди выбирают Proxy.Market</div>
+					<div class="icons__row"> 
+						<div class="icons__col"> 
+							<div class="icons__item"> 
+								<div class="icons__icon"> <img src="img/print.svg" alt=""/></div>
+								<div class="icons__title">Доказанная надёжность</div>
+								<div class="icons__text">Постоянная проверка высокого качества, стабильность сети и высокая скорость передачи данных</div>
+							</div>
+						</div>
+						<div class="icons__col"> 
+							<div class="icons__item"> 
+								<div class="icons__icon"> <img src="img/triangle_circles.svg" alt=""/></div>
+								<div class="icons__title">Гибкость использования</div>
+								<div class="icons__text">Неограниченные возможности масштабирования и настройки прокси под любые задачи</div>
+							</div>
+						</div>
+						<div class="icons__col"> 
+							<div class="icons__item"> 
+								<div class="icons__icon"> <img src="img/stamp.svg" alt=""/></div>
+								<div class="icons__title">Доказанная надёжность</div>
+								<div class="icons__text">Постоянная проверка высокого качества, стабильность сети и высокая скорость передачи данных</div>
+							</div>
+						</div>
+						<div class="icons__col"> 
+							<div class="icons__item"> 
+								<div class="icons__icon"> <img src="img/chart.svg" alt=""/></div>
+								<div class="icons__title">Доказанная надёжность</div>
+								<div class="icons__text">Постоянная проверка высокого качества, стабильность сети и высокая скорость передачи данных</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--	/icons-->
+			<!-- opportunities-->
+			<div class="opportunities">
+				<div class="opportunities__bg"> <img src="img/opportunities_bg.jpg" alt=""/></div>
+				<div class="container_center">
+					<div class="opportunities__item opportunities__item--1">
+						<div class="opportunities__row"> 
+							<div class="opportunities__col"> 
+								<div class="opportunities__content"> 
+									<div class="opportunities__title">Забудьте про ограничения</div>
+									<div class="opportunities__text">Обход ограничений и блоков на различных веб-сайтах. Забудьте о лимите действий совершаемых с одного IP-адреса используя прокси.</div><a class="btn btn--big" href="#">Другие способы</a>
+								</div>
+							</div>
+							<div class="opportunities__col"> 
+								<div class="opportunities__img"><img src="img/opportunity_1.png" alt=""/></div>
+							</div>
+						</div>
+					</div>
+					<div class="opportunities__item opportunities__item--2">
+						<div class="opportunities__row"> 
+							<div class="opportunities__col"> 
+								<div class="opportunities__img"><img src="img/opportunity_2.png" alt=""/></div>
+							</div>
+							<div class="opportunities__col"> 
+								<div class="opportunities__content"> 
+									<div class="opportunities__title">Развивайте свой бизнес</div>
+									<div class="opportunities__text">Увеличивайте обороты за счёт использования большего кол-ва IP-адресов и зарабатывайте на этом. С прокси вы получаете больше возможностей.</div><a class="btn btn--big" href="#">Подробнее о вариантах</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="opportunities__item opportunities__item--3">
+						<div class="opportunities__row"> 
+							<div class="opportunities__col"> 
+								<div class="opportunities__content"> 
+									<div class="opportunities__title">Работайте эффективнее</div>
+									<div class="opportunities__text">Автоматизируйте рабочие процессы с удобным API нашего сервиса. Получайте лучшую поддержку на рынке в любое время 24/7.</div><a class="btn btn--big" href="#">Больше о возможностях</a>
+								</div>
+							</div>
+							<div class="opportunities__col"> 
+								<div class="opportunities__img"><img src="img/opportunity_3.png" alt=""/></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--	/opportunities-->
+			<!-- partnerprogram-->
+			<div class="partnerprogram">
+				<div class="container_center">
+					<div class="partnerprogram__container"> 
+						<div class="partnerprogram__row"> 
+							<div class="partnerprogram__img"> <img src="img/partnerprogram.png" alt=""/></div>
+							<div class="partnerprogram__content"> 
+								<div class="partnerprogram__textblock">
+									<div class="title">Партнёрская программа</div>
+									<div class="partnerprogram__text">Для начала сотрудничества, Вам необходимо зарегистрироваться в нашей системе и получить свой купон в разделе "Партнёрка".</div>
+								</div>
+								<div class="partnerprogram__items"> 
+									<div class="partnerprogram__item">1. Привлекайте новых клиентов по купону, который даёт скидку на первую покупку.
+										<div class="partnerprogram__circle"></div>
+									</div>
+									<div class="partnerprogram__item">2. Со всех платежей вам будет идти процент.
+										<div class="partnerprogram__circle"></div>
+									</div>
+									<div class="partnerprogram__item">3. Деньги можно выводить на QIWI, WebMoney и Яндекс. Деньги
+										<div class="partnerprogram__circle"></div>
+									</div>
+								</div>
+								<div class="partnerprogram__buttons"> <a class="btn btn--big" href="#">Начать зарабатывать</a><a class="partnerprogram__link" href="#">Узнать подробнее</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--	/partnerprogram-->
+			<!-- useful-->
+			<div class="useful">
+				<div class="container_center">
+					<div class="title">Полезные материалы</div>
+					<div class="useful__row"> <a class="useful__item" href="#"> 
+							<div class="useful__title">Блог</div>
+							<div class="useful__text">Полезные статьи, обзоры, инструкции и актуальные новости.</div>
+							<div class="useful__link">Подробнее</div></a><a class="useful__item" href="#"> 
+							<div class="useful__title">FAQ</div>
+							<div class="useful__text">Найдите ответы на любые вопросы, связанные с нашим сервисом.</div>
+							<div class="useful__link">Подробнее</div></a><a class="useful__item" href="#"> 
+							<div class="useful__title">Отзывы</div>
+							<div class="useful__text">Ознакомьтесь с отзывами или поделитесь своим мнением о нас.</div>
+							<div class="useful__link">Подробнее</div></a></div>
+				</div>
+			</div>
+			<!--	/useful-->
+			<!-- modal-->
+			<div class="modal" data-modal="priceModal">
+				<div class="modal__container">
+					<form class="modal__block" action="#">
+						<div class="modal__title">Покупка прокси</div>
+						<div class="modal__subtitle">Информация по покупке</div>
+						<ul class="modal__list"> 
+							<li> <span class="modal__gray-text">Тариф:</span><a href="#">IPv6 Personal</a></li>
+							<li> <span class="modal__gray-text">Количество прокси:</span><span>1</span></li>
+							<li> <span class="modal__gray-text">Срок аренды:</span><span>1 месяц</span></li>
+							<li> <span class="modal__gray-text">Скорость:</span><span>до 1 Мбит/с</span></li>
+							<li> <span class="modal__gray-text">Страна прокси:</span><span>Россия</span></li>
+							<li class="modal__list-line">                    </li>
+							<li class="modal__results"> <span>ИТОГО: </span><span>5,9 руб </span></li>
+						</ul>
+						<div class="modal__subtitle">Способы оплаты</div>
+						<div class="modal__pays"> 
+							<div class="modal__pays-row"> 
+								<div class="modal__pays-col"> 
+									<div class="modal__pays-item"> 
+										<input class="modal__pays-radio" id="pays_0" type="radio" name="pays" checked="checked"/>
+										<label class="modal__pays-label" for="pays_0"> <span class="modal__circle"> </span><span class="modal__icon"> <img src="img/credit-cards.svg" alt=""/></span><span class="modal__text">Банковской картой</span></label>
+									</div>
+								</div>
+								<div class="modal__pays-col"> 
+									<div class="modal__pays-item"> 
+										<input class="modal__pays-radio" id="pays_1" type="radio" name="pays"/>
+										<label class="modal__pays-label" for="pays_1"> <span class="modal__circle"> </span><span class="modal__icon"> <img src="img/qiwi.svg" alt=""/></span><span class="modal__text">Qiwi-кошелек</span></label>
+									</div>
+								</div>
+								<div class="modal__pays-col"> 
+									<div class="modal__pays-item"> 
+										<input class="modal__pays-radio" id="pays_2" type="radio" name="pays"/>
+										<label class="modal__pays-label" for="pays_2"> <span class="modal__circle"> </span><span class="modal__icon"> <img src="img/paypal.svg" alt=""/></span><span class="modal__text">PayPal</span></label>
+									</div>
+								</div>
+								<div class="modal__pays-col"> 
+									<div class="modal__pays-item"> 
+										<input class="modal__pays-radio" id="pays_3" type="radio" name="pays"/>
+										<label class="modal__pays-label" for="pays_3"> <span class="modal__circle"> </span><span class="modal__icon"> <img src="img/bitcoin.svg" alt=""/></span><span class="modal__text">Bitcoin</span></label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal__inputs"> 
+							<div class="input"> 
+								<div class="input__label">Электронная почта</div>
+								<div class="input__input"> 
+									<input type="text" placeholder="Введите вашу электронную почту"/>
+								</div>
+							</div>
+						</div>
+						<div class="modal__bottom"> 
+							<button class="btn btn--big" type="submit">Оплатить</button>
+							<div class="modal__policy"> 
+								<input class="modal__checkbox-input" id="policyModal" type="checkbox" checked="checked"/>
+								<label class="modal__checkbox-label" for="policyModal"><span class="modal__checkbox"> </span>
+									<div class="modal__checkbox-text">Я прочитал <a href="#">пользовательское соглашение</a> и принимаю <a href="#">условия использования,</a> а так же <a href="#">политику конфендициальности</a></div>
+								</label>
+							</div>
+						</div>
+						<div class="modal__close js-modal-close"></div>
+					</form>
+				</div>
+			</div>
+			<!--	/modal-->
+		</main>
+		<footer class="footer">
+			<div class="footer__img"> <img src="img/footer_bg.jpg" alt=""/></div>
+			<!-- callback-->
+			<div class="callback">
+				<div class="container_center"> 
+					<div class="callback__container">
+						<form class="callback__form" action="#">
+							<div class="title">Остались вопросы?</div>
+							<div class="callback__text">Напишите нам и мы постараемся максимально быстро вам помочь и проконсультировать.</div>
+							<div class="callback__row"> 
+								<div class="callback__col1"> 
+									<div class="callback__formrow">
+										<div class="input"> 
+											<div class="input__input"> 
+												<input type="text" placeholder="Ваше имя"/>
+											</div>
+										</div>
+										<div class="input"> 
+											<div class="input__input"> 
+												<input type="text" placeholder="Ваша почта"/>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="callback__col2"> 
+									<div class="textarea"> 
+										<textarea placeholder="Ваш вопрос"></textarea>
+									</div>
+								</div>
+								<div class="callback__col1"> 
+									<button class="btn btn--big" type="submit">Отправить</button>
+								</div>
+								<div class="callback__col2">
+									<div class="callback__policy">Нажимая кнопку “Отправить” вы соглашаетесь с <a href="#">политикой конфендициальности</a> и на обработку ваших персональных данных</div>
+								</div>
+							</div>
+						</form>
+						<div class="callback__social"> 
+							<div class="callback__social-title"> <span>Другие каналы для связи с нами</span></div>
+							<div class="callback__social-items"> 
+								<div class="callback__social-row"><a href="#">Чат на сайте</a><a href="#">support@proxy.market</a><a href="#">Telegram</a><a href="#">Вконтакте</a><a href="#">Facebook</a><a href="#">Instagram</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--	/callback-->
+			<div class="footer__content">
+				<div class="footer__row"> 
+					<div class="footer__col"> <a class="logo" href="#"> <img src="img/logo.svg" alt=""/></a>
+						<div class="social-icons">
+							<div class="social-icons__row"> <a class="social-icons__link" href="#"> 
+									<svg viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M27 13.5C27 6.04462 20.9562 0 13.5 0C6.04379 0 0 6.04462 0 13.5C0 20.9562 6.04369 27 13.5 27C20.9562 27 27 20.9563 27 13.5ZM17 8.66429H15.2007C14.7163 8.66429 14.3761 9.07557 14.3761 9.58834V10.3924H16.9458L16.5297 13.0025H14.3752V19.999H11.7452V13.0025H10V10.3924H11.7452V9.06153H11.7504C11.7967 7.54426 12.322 6.09966 14.8849 6.00864V5.99902H17V8.66429Z"></path>
+									</svg></a><a class="social-icons__link" href="#"> 
+									<svg viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M19.4553 15.7089C18.3436 14.6454 18.2642 14.6454 19.2171 13.4182C20.4082 11.8637 21.9964 9.90021 20.567 9.90021H17.9465C17.4701 9.90021 17.3907 10.2275 17.2318 10.6365C16.5966 12.191 15.326 14.2363 14.8496 13.9091C14.3731 13.5818 14.6113 12.3546 14.6113 10.3911C14.6907 10.1456 14.6113 9.90021 14.4525 9.73658C14.2937 9.57296 14.0555 9.40933 13.8172 9.40933C13.4202 9.32752 13.0231 9.24571 12.6261 9.24571C11.1173 9.24571 10.085 9.90021 10.6409 9.98202C11.6732 10.1456 11.5938 12.4364 11.3555 13.4182C10.9585 15.1363 9.37031 12.1092 8.65563 10.5547C8.57622 10.1456 8.25858 9.90021 7.86153 9.90021H5.79689C5.47925 9.90021 5.24102 9.98202 5.24102 10.2275C5.24102 10.6365 7.22626 14.6454 9.05267 16.6907C10.8791 18.6542 12.7055 18.4906 13.9761 18.4906C14.1349 18.4906 14.2937 18.4088 14.3731 18.327C14.4525 18.2452 14.5319 18.0815 14.5319 17.9179C14.5319 16.6089 15.0084 15.9544 15.8819 16.8543C16.8348 17.8361 17.073 18.4906 18.2642 18.4906H20.4082C20.9641 18.4906 21.1229 18.327 21.1229 18.0815C21.2023 17.5088 20.2494 16.4453 19.4553 15.7089ZM13.8172 0.000819519C21.2023 0.164446 27.0786 6.30043 26.9992 13.7454C26.9198 21.1904 20.8053 27.081 13.4202 26.9992C5.95571 26.9173 0 20.945 0 13.5C0.0794094 5.97318 6.27334 -0.0809936 13.8172 0.000819519Z"></path>
+									</svg></a><a class="social-icons__link" href="#"> 
+									<svg viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M26.9992 13.7454C27.0786 6.30043 21.2023 0.164446 13.8172 0.000819518C6.27334 -0.0809936 0.0794094 5.97318 0 13.5C0 20.945 5.95571 26.9173 13.4202 26.9992C20.8053 27.081 26.9198 21.1904 26.9992 13.7454ZM10.7386 6.13636H16.2614C18.8027 6.13636 20.8636 8.19726 20.8636 10.7386V16.2614C20.8636 18.8027 18.8027 20.8636 16.2614 20.8636H10.7386C8.19726 20.8636 6.13636 18.8027 6.13636 16.2614V10.7386C6.13636 8.19726 8.19726 6.13636 10.7386 6.13636Z"></path>
+										<path d="M17.1818 13.5C17.1818 15.5334 15.5334 17.1818 13.5 17.1818C11.4666 17.1818 9.81818 15.5334 9.81818 13.5C9.81818 11.4666 11.4666 9.81818 13.5 9.81818C15.5334 9.81818 17.1818 11.4666 17.1818 13.5Z"></path>
+										<path d="M18.4091 9.20454C18.4091 9.54345 18.1344 9.81818 17.7955 9.81818C17.4566 9.81818 17.1818 9.54345 17.1818 9.20454C17.1818 8.86564 17.4566 8.59091 17.7955 8.59091C18.1344 8.59091 18.4091 8.86564 18.4091 9.20454Z"></path>
+									</svg></a><a class="social-icons__link" href="#"> 
+									<svg viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 27C20.9558 27 27 20.9558 27 13.5C27 6.04416 20.9558 0 13.5 0C6.04416 0 0 6.04416 0 13.5C0 20.9558 6.04416 27 13.5 27ZM8.74948 14.2851L5.328 13.1231C4.89944 12.9776 4.88793 12.3757 5.31059 12.2138L18.7842 7.05444C19.3812 6.82581 19.9929 7.35262 19.8554 7.97693L17.4452 18.9207C17.3446 19.3777 16.8043 19.5768 16.4312 19.2943L12.9697 16.6739L11.0762 18.5359C10.9039 18.7053 10.6135 18.5711 10.6309 18.33L10.8596 15.161L17.0093 9.50051C17.1109 9.40703 16.9902 9.24711 16.8725 9.31913L8.74948 14.2851Z"></path>
+									</svg></a></div>
+						</div>
+					</div>
+					<div class="footer__col"> 
+						<div class="footer__title">Товары</div>
+						<ul class="footer__list"> 
+							<li> <a href="#">IPv4 прокси</a></li>
+							<li> <a href="#">IPv6 прокси</a></li>
+						</ul>
+					</div>
+					<div class="footer__col"> 
+						<div class="footer__title">Инструменты</div>
+						<ul class="footer__list"> 
+							<li> <a href="#">Чекер прокси</a></li>
+							<li> <a href="#">Конвертер форматов</a></li>
+							<li> <a href="#">Поддержка IPv6</a></li>
+							<li> <a href="#">Генератор UTM-меток</a></li>
+							<li> <a href="#">Скорость прокси</a></li>
+							<li> <a href="#">Мой IP</a></li>
+						</ul>
+					</div>
+					<div class="footer__col"> 
+						<div class="footer__title">Информация</div>
+						<ul class="footer__list"> 
+							<li> <a href="#">FAQ</a></li>
+							<li> <a href="#">Блог</a></li>
+							<li> <a href="#">Партнёрам</a></li>
+							<li> <a href="#">Юридическим лицам</a></li>
+							<li> <a href="#">Разработчикам (API)</a></li>
+						</ul>
+					</div>
+					<div class="footer__col"> 
+						<div class="footer__title">Компания</div>
+						<ul class="footer__list"> 
+							<li> <a href="#">Отзывы</a></li>
+							<li> <a href="#">Карьера</a></li>
+							<li> <a href="#">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="footer__col">
+						<div class="footer__flex">
+							<div class="btn">Войти</div>
+							<div class="lang">
+								<div class="lang__trigger">Ru
+									<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M0.175736 0.575638C0.410051 0.341324 0.78995 0.341324 1.02426 0.575638L4.6 4.15137L8.17574 0.575638C8.41005 0.341324 8.78995 0.341324 9.02426 0.575638C9.25858 0.809953 9.25858 1.18985 9.02426 1.42417L5.02426 5.42417C4.78995 5.65848 4.41005 5.65848 4.17574 5.42417L0.175736 1.42417C-0.0585787 1.18985 -0.0585787 0.809953 0.175736 0.575638Z"></path>
+									</svg>
+								</div>
+								<div class="lang__drop"> 
+									<ul class="lang__list"> 
+										<li> <a href="#">En</a></li>
+										<li> <a href="#">Fra</a></li>
+										<li> <a href="#">De</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/swiper-bundle.min.js"> </script>
+		<script src="js/function.js?0.1"></script>
+	</body>
+</html>
