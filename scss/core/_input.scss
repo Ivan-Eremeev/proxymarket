@@ -34,6 +34,17 @@
     transform: translate(0,-50%);
     z-index: 2;
   }
+  &--white {
+    .input__input {
+      input {
+        background-color: #fff;
+        color: $main_color;
+        &::placeholder {
+          color: #A8A8BD;
+        }
+      }
+    }
+  }
   @media (min-width: $break_sm + 1) {
     &__input {
       input {

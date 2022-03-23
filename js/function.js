@@ -447,4 +447,32 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     modal();
 
+    // Accordion
+    function accordion() {
+        let accordion = document.querySelector('.accordion'),
+            triggerAll = accordion.querySelectorAll('.accordion__trigger'),
+            bodyAll = accordion.querySelectorAll('.accordion__body');
+            triggerAll.forEach(function (triggerItem) {
+            triggerItem.addEventListener('click', function (e) {
+                e.preventDefault();
+                let bodyData = this.getAttribute('data-trigger'),
+                    body = accordion.querySelector('.accordion__body[data-body="' + bodyData + '"]');
+                if (!this.classList.contains('active')) {
+                    triggerAll.forEach(function (triggerItem) {
+                        triggerItem.classList.remove('active');
+                    })
+                    bodyAll.forEach(function (bodyItem) {
+                        bodyItem.style.maxHeight = 0;
+                    })
+                    this.classList.add('active');
+                    body.style.maxHeight = body.scrollHeight + 'px';
+                }else {
+                    this.classList.remove('active');
+                    body.style.maxHeight = 0;
+                }
+            })
+        })
+    }
+    accordion();
+
 })

@@ -1,0 +1,42 @@
+.breadcrambs {
+    &__list {
+        margin-top: 1.8em;
+        margin-bottom: 3em;
+        padding-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        font-size: 0.6875em;
+        color: #8E8E92;
+        li {
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            &:not(:first-child) {
+                position: relative;
+                padding-left: 0.625em;
+                margin-left: 0.625em;
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 3px;
+                    height: 3px;
+                    background-color: #8E8E92;
+                    border-radius: 100%;
+                    position: absolute;
+                    top: 1em;
+                    left: -0.075em;
+                }
+            }
+            a {
+                color: #8E8E92;
+                text-decoration: none;
+                &:hover {
+                    color: $main_color;
+                }
+            }
+            span {
+
+            }
+        }
+    }
+}

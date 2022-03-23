@@ -1,0 +1,54 @@
+.accordion {
+    &__item {
+        background-color: #fff;
+        border-radius: 0.3125em;
+        margin-bottom: 0.6em;
+    }
+    &__trigger {
+        cursor: pointer;
+        user-select: none;
+        &.active {
+            .accordion__title {
+                color: $color_primary;
+                svg {
+                    fill: $color_primary;
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+    &__body {
+        overflow: hidden;
+        transition: 0.3s;
+        max-height: 0;
+        &.open {
+            
+        }
+    }
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 1.5em 0.9em;
+        font-size: 1.125em;
+        color: #838396;
+        transition: 0.3s;
+        svg {
+            width: 0.875em;
+            margin-top: 0.5em;
+            margin-left: 0.5em;
+            flex-shrink: 0;
+            fill: #838396;
+            transition: 0.3s;
+        }
+    }
+    &__text {
+        padding: 0 0.9375em 1.4375em;
+        color: #686875;
+    }
+    @media (min-width: $break_sm + 1) {
+        &__title {
+            padding: 0.75em 0.9em;
+        }
+    }
+}
