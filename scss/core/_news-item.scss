@@ -1,0 +1,36 @@
+.news-item {
+    text-decoration: none;
+    color: $main_color;
+    &__img {
+        height: 12.8125em;
+        margin-bottom: 0.75em;
+        border-radius: 0.625em;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 1s;
+        }
+    }
+    &__date {
+        font-size: 14px;
+        color: #A5A5A5;
+        margin-bottom: 1em;
+    }
+    &__title {
+        font-size: 1.125em;
+        font-weight: bold;
+        margin-bottom: 0.5625em;
+    }
+    &__text {
+
+    }
+    &:hover {
+        .news-item__img {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

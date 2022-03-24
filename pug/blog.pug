@@ -1,0 +1,102 @@
+extends layout/layout_inner.pug
+include layout/news_item.pug
+
+block content
+    .page_container
+        // breadcrambs 
+        .breadcrambs 
+            .container_center
+                ul.breadcrambs__list
+                    li 
+                        a(href="#") Главная
+                    li 
+                        span FAQ
+        //	/breadcrambs 
+
+        .comments
+            .container_center
+                .title FAQ
+                .faq__row 
+                    .faq__col1 
+
+                        form(action="#").faq__search 
+                            .input.input--white
+                                .input__input 
+                                    input(type="text" placeholder="Введите ваш запрос")
+                            .btn Поиск
+                .comments__category 
+                    ul.comments__category-list 
+                        li 
+                            a(href="#").active Настройка
+                        li 
+                            a(href="#") Новости
+                        li 
+                            a(href="#") Софт
+                        li 
+                            a(href="#") Другие
+                .comments__row 
+                    .comments__col3
+                        +news-item('img/news_1.jpg')
+                    .comments__col3 
+                        +news-item('img/news_2.jpg')
+                    .comments__col3
+                        +news-item('img/news_3.jpg')
+                    .comments__col3
+                        +news-item('img/news_4.jpg')
+                    .comments__col3
+                        +news-item('img/news_5.jpg')
+                    .comments__col3
+                        +news-item('img/news_1.jpg')
+                    .comments__col3
+                        +news-item('img/news_6.jpg')
+                    .comments__col3
+                        +news-item('img/news_7.jpg')
+                    .comments__col3
+                        +news-item('img/news_8.jpg')
+                    .comments__col3
+                        +news-item('img/news_9.jpg')
+                    .comments__col3
+                        +news-item('img/news_3.jpg')
+                    .comments__col3
+                        +news-item('img/news_5.jpg')
+                    .comments__col3
+                        +news-item('img/news_10.jpg')
+                    .comments__col3
+                        +news-item('img/news_11.jpg')
+                    .comments__col3
+                        +news-item('img/news_4.jpg')
+                    .comments__col3
+                        +news-item('img/news_2.jpg')
+                    .comments__col3
+                        +news-item('img/news_1.jpg')
+                    .comments__col3
+                        +news-item('img/news_7.jpg')
+                    .comments__col3
+                        +news-item('img/news_6.jpg')
+                    .comments__col3
+                        +news-item('img/news_8.jpg')
+                .comments__pagination 
+                    ul.comments__pagination-list 
+                        li 
+                            a(href="#").comments__pagination-arrow
+                                <svg width="37" height="11" viewBox="0 0 37 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.08294 1.92417C5.31725 1.68985 5.31725 1.30995 5.08294 1.07564C4.84862 0.841324 4.46872 0.841324 4.23441 1.07564L0.400181 4.90987C0.171867 4.95613 0 5.15794 0 5.3999C0 5.50423 0.0319519 5.60109 0.0866013 5.68124C0.114689 5.7701 0.163956 5.85371 0.234409 5.92417L4.23441 9.92417C4.46872 10.1585 4.84862 10.1585 5.08294 9.92417C5.31725 9.68985 5.31725 9.30995 5.08294 9.07564L1.9072 5.8999H36.5C36.7761 5.8999 37 5.67604 37 5.3999C37 5.12376 36.7761 4.8999 36.5 4.8999H2.1072L5.08294 1.92417Z"/>
+                                </svg>
+
+                        li 
+                            a(href="#") 1
+                        li 
+                            a(href="#").active 2
+                        li 
+                            a(href="#") 3
+                        li 
+                            a(href="#") 4
+                        li 
+                            span ...
+                        li 
+                            a(href="#") 14
+                        li 
+                            a(href="#").comments__pagination-arrow
+                                <svg width="37" height="11" viewBox="0 0 37 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.9171 1.92417C31.6827 1.68985 31.6827 1.30995 31.9171 1.07564C32.1514 0.841324 32.5313 0.841324 32.7656 1.07564L36.5998 4.90987C36.8281 4.95613 37 5.15794 37 5.3999C37 5.50423 36.968 5.60109 36.9134 5.68124C36.8853 5.7701 36.836 5.85371 36.7656 5.92417L32.7656 9.92417C32.5313 10.1585 32.1514 10.1585 31.9171 9.92417C31.6827 9.68985 31.6827 9.30995 31.9171 9.07564L35.0928 5.8999H0.5C0.223857 5.8999 0 5.67604 0 5.3999C0 5.12376 0.223858 4.8999 0.5 4.8999H34.8928L31.9171 1.92417Z"/>
+                                </svg>
