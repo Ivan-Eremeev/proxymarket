@@ -1,14 +1,15 @@
 .social-icons {
   &__row {
+    display: flex;
     margin-left: -0.4em;
   }
   &__link {
     display: block;
     width: 1.6875em;
     margin-left: 0.4em;
-    display: inline-block;
     text-decoration: none;
     svg {
+      display: block;
       max-width: 100%;
       fill: #8293A9;
       transition: 0.3s;

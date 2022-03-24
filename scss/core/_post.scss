@@ -1,0 +1,112 @@
+.post {
+    padding-bottom: 3.75em;
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -1.875em;
+        margin-left: -1.875em;
+    }
+    &__col1 {
+        width: 100%;
+        padding-top: 1.875em;
+        padding-left: 1.875em;
+    }
+    &__col2 {
+        width: 100%;
+        padding-top: 1.875em;
+        padding-left: 1.875em;
+    }
+    .title {
+        margin-bottom: 0.9em;
+    }
+    &__textblock {
+        img {
+            width: 100%;
+            margin-bottom: 0.7em;
+        }
+        p {
+            margin: 1em 0;
+            line-height: 1.5;
+        }
+        h1,h2,h3,h4,h5,h6 {
+            margin: 1em 0;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        ul {
+            margin: 1em 0;
+        }
+        ul {
+            li {
+                margin: 0.5em 0;
+            }
+        }
+        ol {
+            padding-left: 1em;
+            li {
+                margin: 0.5em 0;
+            }
+        }
+        b {
+            font-weight: bold;
+        }
+        blockquote {
+            padding: 2em;
+            margin-top: 1.5em;
+            margin-bottom: 1.5em;
+            margin-left: 0;
+            margin-right: 0;
+            line-height: 1.5;
+            background-color: #EEEEF2;
+            border-radius: 0.25em 0.625em 0.625em 0.25em;
+            position: relative;
+            &:after {
+                content: '';
+                display: block;
+                width: 5px;
+                height: 100%;
+                border-radius: 1.875em;
+                background-color: $color_primary;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+    &__bottom {
+        margin-bottom: 1.875em;
+    }
+    &__social {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 2.5em;
+        margin-top: 4.6875em;
+        border-top: 1px solid #E1E1E3;
+        .social-icons__link {
+            &:hover {
+                svg {
+                    fill: $main_color;
+                }
+            }
+        }
+    }
+    &__social-title {
+        font-size: 14px;
+        font-weight: bold;
+        margin-right: 1em;
+    }
+    @media (min-width: $break_sm + 1) {
+        &__col1 {
+            width: 66.66%;
+        }
+        &__col2 {
+            width: 33.33%;
+        }
+        &__textblock {
+            blockquote {
+                padding: 1.7em 4.375em 1.7em 2.1875em;
+            }
+        }
+    }
+}

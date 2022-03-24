@@ -10,12 +10,14 @@ block content
                     li 
                         a(href="#") Главная
                     li 
-                        span FAQ
+                        span Блог
         //	/breadcrambs 
 
+        // comments
         .comments
             .container_center
                 .title FAQ
+
                 .faq__row 
                     .faq__col1 
 
@@ -24,6 +26,7 @@ block content
                                 .input__input 
                                     input(type="text" placeholder="Введите ваш запрос")
                             .btn Поиск
+
                 .comments__category 
                     ul.comments__category-list 
                         li 
@@ -34,6 +37,7 @@ block content
                             a(href="#") Софт
                         li 
                             a(href="#") Другие
+
                 .comments__row 
                     .comments__col3
                         +news-item('img/news_1.jpg')
@@ -75,6 +79,7 @@ block content
                         +news-item('img/news_6.jpg')
                     .comments__col3
                         +news-item('img/news_8.jpg')
+
                 .comments__pagination 
                     ul.comments__pagination-list 
                         li 
@@ -100,3 +105,4 @@ block content
                                 <svg width="37" height="11" viewBox="0 0 37 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M31.9171 1.92417C31.6827 1.68985 31.6827 1.30995 31.9171 1.07564C32.1514 0.841324 32.5313 0.841324 32.7656 1.07564L36.5998 4.90987C36.8281 4.95613 37 5.15794 37 5.3999C37 5.50423 36.968 5.60109 36.9134 5.68124C36.8853 5.7701 36.836 5.85371 36.7656 5.92417L32.7656 9.92417C32.5313 10.1585 32.1514 10.1585 31.9171 9.92417C31.6827 9.68985 31.6827 9.30995 31.9171 9.07564L35.0928 5.8999H0.5C0.223857 5.8999 0 5.67604 0 5.3999C0 5.12376 0.223858 4.8999 0.5 4.8999H34.8928L31.9171 1.92417Z"/>
                                 </svg>
+        // /comments
