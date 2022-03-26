@@ -1,0 +1,43 @@
+.earn {
+    background-color: #fff;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__col {
+        width: 100%;
+    }
+    .title {
+        
+    }
+    &__img {
+        text-align: center;
+        margin-bottom: 3em;
+        img {
+            width: 80%;
+        }
+    }
+    @media (min-width: $break_sm + 1) {
+        padding-bottom: 6.5em;
+        &__col {
+            width: 50%;
+        }
+        .title {
+            width: 12em;
+        }
+        &__img {
+        min-height: 28em;
+        position: relative;
+        margin-bottom: 0;
+        img {
+            width: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+        }
+    }
+    }
+}
