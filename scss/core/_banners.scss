@@ -1,0 +1,188 @@
+.banners {
+    padding: 5em 0;
+    .title {
+        margin-bottom: 0.7em;
+    }
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__menu {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        list-style-type: none;
+        margin-top: -0.5em;
+        margin-left: -0.5em;
+        li {
+            margin-top: 0.5em;
+            margin-left: 0.5em;
+            a {
+                display: inline-block;
+                padding: 0.5em 0.8em;
+                font-size: 1.125em;
+                color: #7F7F8D;
+                text-decoration: none;
+                border-radius: 0.3125em;
+                &.active, &:hover {
+                    background-color: $color_primary;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    &__content {
+        flex-grow: 1;
+    }
+    &__sort {
+        display: flex;
+        flex-wrap: wrap;
+        background: #E7ECF0;
+        padding: 0.9em 1em;
+        border-radius: 0.3125em;
+        margin-bottom: 1.5em;
+    }
+    &__sort-title {
+        width: 100%;
+        font-size: 1.125em;
+        font-weight: bold;
+        margin-right: 1.25em;
+        margin-bottom: 0.5em;
+    }
+    &__sort-row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -1em;
+        margin-left: -1.875em;
+    }
+    &__sort-item {
+        display: flex;
+        align-items: center;
+        margin-top: 1em;
+        margin-left: 1.875em;
+        label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            color: #838396;
+            transition: 0.3s;
+            white-space: nowrap;
+            &:hover {
+                color: $main_color;
+            }
+        }
+        input {
+            display: none;
+            &:checked {
+                + label {
+                    color: $main_color;
+                    .banners__sort-radio {
+                        border-color: $color_primary;
+                        &:after {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__sort-radio {
+        flex-shrink: 0;
+        width: 1.25em;
+        height: 1.25em;
+        margin-right: 0.5em;
+        border: 1px solid #B6C9DB;
+        border-radius: 100%;
+        transition: 0.3s;
+        position: relative;
+        &:after {
+            content: '';
+            display: block;
+            width: 0.625em;
+            height: 0.625em;
+            background-color: $color_primary;
+            border-radius: 100%;
+            opacity: 0;
+            transition: 0.3s;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+    &__items {
+        
+    }
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -1.25em;
+        margin-left: -1.25em;
+    }
+    &__col {
+        width: 100%;
+        padding-top: 1.25em;
+        padding-left: 1.25em;
+    }
+    &__item {
+        
+    }
+    &__img {
+        height: 15.625em;
+        display: block;
+        border-radius: 0.625em;
+        overflow: hidden;
+        margin-bottom: 0.3em;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 1s;
+        }
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+    &__link {
+        text-decoration: none;
+        color: $color_primary;
+        border-bottom: 1px solid $color_primary;
+        &:hover {
+            border-color: transparent;
+        }
+    }
+    @media (min-width: $break_sm + 1) {
+        padding: 6.5em 0 4.625em;
+        &__menu {
+            width: 29.375em;
+            margin-bottom: 0;
+        }
+        &__list {
+            display: block;
+        }
+        &__body {
+            flex-wrap: nowrap;
+        }
+        &__col {
+            width: 25%;
+        }
+        &__sort-title {
+            width: auto;
+            margin-bottom: 0;
+        }
+        &__sort {
+            padding: 0.9em 1.875em;
+            margin-bottom: 2.5em;
+        }
+        &__img {
+            margin-bottom: 0.8em;
+        }
+    }
+}
