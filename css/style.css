@@ -1830,6 +1830,7 @@ html[data-browser*=flexible] .grid_nowrap {
 }
 .welcome__calc-col {
   width: 100%;
+  min-width: 12em;
   margin-left: 1.75em;
   margin-top: 1em;
 }
@@ -1968,9 +1969,6 @@ html[data-browser*=flexible] .grid_nowrap {
   }
 }
 
-.select {
-  min-width: 12.5em;
-}
 .select__select {
   position: relative;
 }
@@ -2023,9 +2021,6 @@ html[data-browser*=flexible] .grid_nowrap {
   }
 }
 
-.input {
-  min-width: 12.5em;
-}
 .input__input {
   position: relative;
 }
@@ -3056,18 +3051,7 @@ html[data-browser*=flexible] .grid_nowrap {
   margin-top: -1.875em;
   margin-left: -1.875em;
 }
-.callback__col1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  padding-top: 1.875em;
-  padding-left: 1.875em;
-}
-.callback__col2 {
+.callback__col {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3175,10 +3159,10 @@ html[data-browser*=flexible] .grid_nowrap {
   .callback__policy {
     width: 40em;
   }
-  .callback__col1 {
+  .callback__col {
     width: 41.66%;
   }
-  .callback__col2 {
+  .callback__col:nth-child(2n) {
     width: 58.33%;
   }
   .callback__social-title {
@@ -3647,12 +3631,12 @@ html[data-browser*=flexible] .grid_nowrap {
   margin-left: -1.875em;
   margin-top: -1.875em;
 }
-.faq__col1 {
+.faq__big {
   width: 100%;
   padding-left: 1.875em;
   padding-top: 1.875em;
 }
-.faq__col2 {
+.faq__small {
   width: 100%;
   padding-left: 1.875em;
   padding-top: 1.875em;
@@ -3699,10 +3683,10 @@ html[data-browser*=flexible] .grid_nowrap {
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
-  .faq__col1 {
+  .faq__big {
     width: 58.33%;
   }
-  .faq__col2 {
+  .faq__small {
     width: 41.66%;
   }
   .faq__search {
@@ -3824,7 +3808,7 @@ html[data-browser*=flexible] .grid_nowrap {
   padding-top: 3.75em;
   border-top: 1px solid #E1E1E3;
 }
-.comments__pagination-list {
+.comments__pagination ul {
   font-size: 0.75em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3837,10 +3821,10 @@ html[data-browser*=flexible] .grid_nowrap {
   margin-top: 0;
   margin-bottom: 0;
 }
-.comments__pagination-list li {
+.comments__pagination ul li {
   margin-left: 0.9375em;
 }
-.comments__pagination-list li a {
+.comments__pagination ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3858,16 +3842,26 @@ html[data-browser*=flexible] .grid_nowrap {
   border: 1px solid #E3E3E3;
   border-radius: 0.5em;
 }
-.comments__pagination-list li a.active {
+.comments__pagination ul li a svg {
+  width: 2.3em;
+  fill: #858585;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.comments__pagination ul li a.active {
   color: #0000FF;
   background: transparent;
   border-color: transparent;
 }
-.comments__pagination-list li a:hover:not(.active) {
+.comments__pagination ul li a:hover svg {
+  fill: #2E2E42;
+}
+.comments__pagination ul li a:hover:not(.active) {
   color: #2E2E42;
   border-color: #2E2E42;
 }
-.comments__pagination-list li span {
+.comments__pagination ul li span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3880,16 +3874,6 @@ html[data-browser*=flexible] .grid_nowrap {
   width: 3.4375em;
   height: 3.4375em;
   color: #B4B4B4;
-}
-.comments__pagination-arrow svg {
-  width: 2.3em;
-  fill: #858585;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-.comments__pagination-arrow:hover svg {
-  fill: #2E2E42;
 }
 .comments__category {
   margin-bottom: 2.5em;
@@ -3918,7 +3902,7 @@ html[data-browser*=flexible] .grid_nowrap {
 .comments__category-list li a:hover, .comments__category-list li a.active {
   border-color: #0000FF;
 }
-.comments__col3 {
+.comments__small {
   width: 100%;
   padding-top: 1.875em;
   padding-left: 1.875em;
@@ -3927,10 +3911,10 @@ html[data-browser*=flexible] .grid_nowrap {
   .comments__col {
     width: 50%;
   }
-  .comments__pagination-list {
+  .comments__pagination ul {
     font-size: 1em;
   }
-  .comments__col3 {
+  .comments__small {
     width: 25%;
   }
 }
@@ -3982,12 +3966,12 @@ html[data-browser*=flexible] .grid_nowrap {
   margin-top: -1.875em;
   margin-left: -1.875em;
 }
-.post__col1 {
+.post__content {
   width: 100%;
   padding-top: 1.875em;
   padding-left: 1.875em;
 }
-.post__col2 {
+.post__aside {
   width: 100%;
   padding-top: 1.875em;
   padding-left: 1.875em;
@@ -4070,10 +4054,10 @@ html[data-browser*=flexible] .grid_nowrap {
   margin-right: 1em;
 }
 @media (min-width: 768px) {
-  .post__col1 {
+  .post__content {
     width: 66.66%;
   }
-  .post__col2 {
+  .post__aside {
     width: 33.33%;
   }
   .post__textblock blockquote {

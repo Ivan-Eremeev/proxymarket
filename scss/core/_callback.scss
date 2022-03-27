@@ -28,14 +28,7 @@
     margin-top: -1.875em;
     margin-left: -1.875em;
   }
-  &__col1 {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding-top: 1.875em;
-    padding-left: 1.875em;
-  }
-  &__col2 {
+  &__col {
     display: flex;
     align-items: center;
     width: 100%;
@@ -128,11 +121,11 @@
     &__policy {
       width: 40em;
     }
-    &__col1 {
+    &__col {
       width: 41.66%;
-    }
-    &__col2 {
-      width: 58.33%;
+      &:nth-child(2n) {
+        width: 58.33%;
+      }
     }
     &__social-title {
       padding: 0 3.75em;
