@@ -6,7 +6,7 @@
 	font-size: 1em;
 	font-weight: 400;
 	padding: 0.8em 1.3em 0.8em;
-	border: none;
+	border: 0.0625em solid transparent;
 	outline: none;
 	text-decoration: none;
 	display: inline-block;
@@ -17,15 +17,25 @@
 	border-radius: 0.4em;
 	transition: 0.3s;
 	transition-property: background color border-color;
-	&--big {
-		padding: 1.45em 3.375em;
-	}
-
 	&:hover {
 		background-color: $btn_default_bg_color_hover;
 		color: $btn_default_text_color;
 		box-shadow: 0 0 2.5em rgba(0,132,255,0.5);
 	}
+	&--big {
+		padding: 1.45em 3.375em;
+	}
+	&--blueborder {
+		background-color: #fff;
+		border-color: $color_primary;
+		color: $main_color;
+		font-weight: bold;
+		&:hover {
+			background-color: #fff;
+			color: $color_primary;
+		}
+	}
+
 
 	&:active,
 	&:focus {

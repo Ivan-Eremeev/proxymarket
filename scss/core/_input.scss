@@ -44,6 +44,17 @@
       }
     }
   }
+  &--error {
+    .input__input {
+      input {
+        border-color: #E42828;
+      }
+    }
+  }
+  &__error {
+    font-size: 0.625em;
+    color: #E42828;
+  }
   @media (min-width: $break_sm + 1) {
     &__input {
       input {

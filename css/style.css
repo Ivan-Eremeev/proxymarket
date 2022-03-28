@@ -587,6 +587,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: -1;
 }
 .header__bg img {
   width: 100%;
@@ -1455,7 +1456,7 @@ html[data-browser*=flexible] .grid_nowrap {
   font-size: 1em;
   font-weight: 400;
   padding: 0.8em 1.3em 0.8em;
-  border: none;
+  border: 0.0625em solid transparent;
   outline: none;
   text-decoration: none;
   display: inline-block;
@@ -1471,14 +1472,24 @@ html[data-browser*=flexible] .grid_nowrap {
   -o-transition-property: background color border-color;
   transition-property: background color border-color;
 }
-.btn--big {
-  padding: 1.45em 3.375em;
-}
 .btn:hover {
   background-color: #2424ff;
   color: #fff;
   -webkit-box-shadow: 0 0 2.5em rgba(0, 132, 255, 0.5);
   box-shadow: 0 0 2.5em rgba(0, 132, 255, 0.5);
+}
+.btn--big {
+  padding: 1.45em 3.375em;
+}
+.btn--blueborder {
+  background-color: #fff;
+  border-color: #0000FF;
+  color: #2E2E42;
+  font-weight: bold;
+}
+.btn--blueborder:hover {
+  background-color: #fff;
+  color: #0000FF;
 }
 .btn:active, .btn:focus {
   background-color: #0000cc;
@@ -2075,6 +2086,13 @@ html[data-browser*=flexible] .grid_nowrap {
 }
 .input--white .input__input input::placeholder {
   color: #A8A8BD;
+}
+.input--error .input__input input {
+  border-color: #E42828;
+}
+.input__error {
+  font-size: 0.625em;
+  color: #E42828;
 }
 @media (min-width: 768px) {
   .input__input input {
@@ -3439,8 +3457,10 @@ html[data-browser*=flexible] .grid_nowrap {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-top: -1.25em;
 }
 .modal__bottom .btn {
+  margin-top: 1.25em;
   margin-right: 0;
   width: 100%;
 }
@@ -3564,11 +3584,15 @@ html[data-browser*=flexible] .grid_nowrap {
     width: 25em;
   }
   .modal__bottom {
+    margin-top: 0;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
   }
   .modal__bottom .btn {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
     width: auto;
+    margin-top: 0;
     margin-right: 2.5em;
   }
   .modal__policy {

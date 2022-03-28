@@ -162,7 +162,9 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-top: -1.25em;
     .btn {
+      margin-top: 1.25em;
       margin-right: 0;
       width: 100%;
     }
@@ -267,14 +269,18 @@
       width: 25em;
     }
     &__bottom {
+      margin-top: 0;
       flex-wrap: nowrap;
       .btn {
+        flex-shrink: 0;
         width: auto;
+        margin-top: 0;
         margin-right: 2.5em;
       }
     }
     &__policy {
       margin-top: 0;
     }
+    
   }
 }

@@ -462,7 +462,7 @@ block content
                     .useful__link Подробнее
     //	/useful
 
-    // modal
+    // modal payments
     .modal(data-modal="priceModal")
         .modal__container
             form(action="#").modal__block
@@ -541,4 +541,42 @@ block content
                                 |  а так же 
                                 a(href="#") политику конфендициальности
                 .modal__close.js-modal-close
-    //	/modal
+    //	/modal payments
+
+    // modal login
+    .modal(data-modal="loginModal")
+        .modal__container
+            form(action="#").modal__block
+                .modal__title Авторизация
+                .modal__subtitle Введите адресс электронной почты, на который мы пришлем вам код для входа в личный кабинет
+                .modal__inputs 
+                    .input 
+                        .input__label Код подтверждения
+                        .input__input 
+                            input(type="text" placeholder="Введите код подтверждения")
+                    .input.input--error
+                        .input__label Код подтверждения
+                        .input__input 
+                            input(type="text" placeholder="Введите код подтверждения")
+                            .input__error Неверный код. У вас осталось 2 попытки
+                .modal__bottom 
+                    button(type="submit").btn.btn--big Отправить код
+                    .modal__policy 
+                        input#policyModal_1(type="checkbox" checked).modal__checkbox-input
+                        label(for="policyModal_1").modal__checkbox-label
+                            span.modal__checkbox 
+                            span.modal__checkbox-text Я прочитал 
+                                a(href="#") пользовательское соглашение
+                                |  и принимаю 
+                                a(href="#") условия использования,
+                                |  а так же 
+                                a(href="#") политику конфендициальности
+                .modal__bottom 
+                    button(type="submit").btn.btn--big Отправить код
+                    .btn.btn--big.btn--blueborder Отправить код повторно
+                .modal__subtitle Вы неправильно ввели код 3 раза. Теперь вы не сможете ввести код, отправленный по адресу pochta@mail.ru Вы можете повторно отправить код.
+                .modal__bottom 
+                    .btn.btn--big Отправить код повторно
+                    .btn.btn--big.btn--blueborder Ввести другой Email
+                .modal__close.js-modal-close
+    //	/modal login
