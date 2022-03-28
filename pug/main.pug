@@ -546,19 +546,15 @@ block content
     // modal login
     .modal(data-modal="loginModal")
         .modal__container
+
             form(action="#").modal__block
                 .modal__title Авторизация
                 .modal__subtitle Введите адресс электронной почты, на который мы пришлем вам код для входа в личный кабинет
                 .modal__inputs 
                     .input 
-                        .input__label Код подтверждения
+                        .input__label Электронная почта
                         .input__input 
-                            input(type="text" placeholder="Введите код подтверждения")
-                    .input.input--error
-                        .input__label Код подтверждения
-                        .input__input 
-                            input(type="text" placeholder="Введите код подтверждения")
-                            .input__error Неверный код. У вас осталось 2 попытки
+                            input(type="text" placeholder="Введите вашу электронную почту")
                 .modal__bottom 
                     button(type="submit").btn.btn--big Отправить код
                     .modal__policy 
@@ -571,9 +567,37 @@ block content
                                 a(href="#") условия использования,
                                 |  а так же 
                                 a(href="#") политику конфендициальности
+                .modal__close.js-modal-close
+
+            form(action="#").modal__block
+                .modal__title Авторизация
+                .modal__subtitle Письмо с кодом подтверждения было отправлено по адресу pochta@mail.ru Введите код из письма. 
+                .modal__inputs 
+                    .input 
+                        .input__label Код подтверждения
+                        .input__input 
+                            input(type="text" placeholder="Введите код подтверждения")
                 .modal__bottom 
-                    button(type="submit").btn.btn--big Отправить код
+                    button(type="submit").btn.btn--big Войти
                     .btn.btn--big.btn--blueborder Отправить код повторно
+                .modal__close.js-modal-close
+
+            form(action="#").modal__block
+                .modal__title Авторизация
+                .modal__subtitle Письмо с кодом подтверждения было отправлено по адресу pochta@mail.ru Введите код из письма. 
+                .modal__inputs 
+                    .input.input--error
+                        .input__label Код подтверждения
+                        .input__input 
+                            input(type="text" placeholder="Введите код подтверждения")
+                            .input__error Неверный код. У вас осталось 2 попытки
+                .modal__bottom 
+                    button(type="submit").btn.btn--big Войти
+                    .btn.btn--big.btn--blueborder Отправить код повторно
+                .modal__subtitle Вы неправильно ввели код 3 раза. Теперь вы не сможете ввести код, отправленный по адресу pochta@mail.ru Вы можете повторно отправить код.
+                .modal__close.js-modal-close
+            form(action="#").modal__block
+                .modal__title Авторизация
                 .modal__subtitle Вы неправильно ввели код 3 раза. Теперь вы не сможете ввести код, отправленный по адресу pochta@mail.ru Вы можете повторно отправить код.
                 .modal__bottom 
                     .btn.btn--big Отправить код повторно

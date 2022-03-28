@@ -709,16 +709,9 @@
 						<div class="modal__subtitle">Введите адресс электронной почты, на который мы пришлем вам код для входа в личный кабинет</div>
 						<div class="modal__inputs"> 
 							<div class="input"> 
-								<div class="input__label">Код подтверждения</div>
+								<div class="input__label">Электронная почта</div>
 								<div class="input__input"> 
-									<input type="text" placeholder="Введите код подтверждения"/>
-								</div>
-							</div>
-							<div class="input input--error">
-								<div class="input__label">Код подтверждения</div>
-								<div class="input__input"> 
-									<input type="text" placeholder="Введите код подтверждения"/>
-									<div class="input__error">Неверный код. У вас осталось 2 попытки</div>
+									<input type="text" placeholder="Введите вашу электронную почту"/>
 								</div>
 							</div>
 						</div>
@@ -729,10 +722,46 @@
 								<label class="modal__checkbox-label" for="policyModal_1"><span class="modal__checkbox"> </span><span class="modal__checkbox-text">Я прочитал <a href="#">пользовательское соглашение</a> и принимаю <a href="#">условия использования,</a> а так же <a href="#">политику конфендициальности</a></span></label>
 							</div>
 						</div>
+						<div class="modal__close js-modal-close"></div>
+					</form>
+					<form class="modal__block" action="#">
+						<div class="modal__title">Авторизация</div>
+						<div class="modal__subtitle">Письмо с кодом подтверждения было отправлено по адресу pochta@mail.ru Введите код из письма. </div>
+						<div class="modal__inputs"> 
+							<div class="input"> 
+								<div class="input__label">Код подтверждения</div>
+								<div class="input__input"> 
+									<input type="text" placeholder="Введите код подтверждения"/>
+								</div>
+							</div>
+						</div>
 						<div class="modal__bottom"> 
-							<button class="btn btn--big" type="submit">Отправить код</button>
+							<button class="btn btn--big" type="submit">Войти</button>
 							<div class="btn btn--big btn--blueborder">Отправить код повторно</div>
 						</div>
+						<div class="modal__close js-modal-close"></div>
+					</form>
+					<form class="modal__block" action="#">
+						<div class="modal__title">Авторизация</div>
+						<div class="modal__subtitle">Письмо с кодом подтверждения было отправлено по адресу pochta@mail.ru Введите код из письма. </div>
+						<div class="modal__inputs"> 
+							<div class="input input--error">
+								<div class="input__label">Код подтверждения</div>
+								<div class="input__input"> 
+									<input type="text" placeholder="Введите код подтверждения"/>
+									<div class="input__error">Неверный код. У вас осталось 2 попытки</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal__bottom"> 
+							<button class="btn btn--big" type="submit">Войти</button>
+							<div class="btn btn--big btn--blueborder">Отправить код повторно</div>
+						</div>
+						<div class="modal__subtitle">Вы неправильно ввели код 3 раза. Теперь вы не сможете ввести код, отправленный по адресу pochta@mail.ru Вы можете повторно отправить код.</div>
+						<div class="modal__close js-modal-close"></div>
+					</form>
+					<form class="modal__block" action="#">
+						<div class="modal__title">Авторизация</div>
 						<div class="modal__subtitle">Вы неправильно ввели код 3 раза. Теперь вы не сможете ввести код, отправленный по адресу pochta@mail.ru Вы можете повторно отправить код.</div>
 						<div class="modal__bottom"> 
 							<div class="btn btn--big">Отправить код повторно</div>
